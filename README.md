@@ -1,11 +1,4 @@
-# 📚 Learnovate – JAVA & DSA 
-
-![Java](https://img.shields.io/badge/Language-Java-blue?logo=java&logoColor=white)  
-![DSA](https://img.shields.io/badge/Topic-DSA-green)  
-![Contributions](https://img.shields.io/badge/Contributions-Welcome-orange)  
-![Stars](https://img.shields.io/github/stars/ankittroy-21/Learnovate?style=social)  
-![Forks](https://img.shields.io/github/forks/ankittroy-21/Learnovate?style=social)  
-![License](https://img.shields.io/badge/License-MIT-lightgrey)  
+# 📚 Learnovate – JAVA & DSA  
 
 ---
 
@@ -131,3 +124,10 @@ Your support motivates us to keep uploading more questions & solutions 🙌
 
 ### Made with ❤️ for students of **BBD University**  
 Keep Practicing • Keep Learning • Keep Growing 🚀  
+
+![Java](https://img.shields.io/badge/Language-Java-blue?logo=java&logoColor=white)  
+![DSA](https://img.shields.io/badge/Topic-DSA-green)  
+![Contributions](https://img.shields.io/badge/Contributions-Welcome-orange)  
+![Stars](https://img.shields.io/github/stars/ankittroy-21/Learnovate?style=social)  
+![Forks](https://img.shields.io/github/forks/ankittroy-21/Learnovate?style=social)  
+![License](https://img.shields.io/badge/License-MIT-lightgrey) 
