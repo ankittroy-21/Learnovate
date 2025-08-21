@@ -1,12 +1,17 @@
-# What is Java?
-Java is a high-level, object-oriented, platform-independent programming language
-developed by **Sun Microsystems in 1995 (now owned by Oracle)**. It follows the
-WORA principle — “Write Once, Run Anywhere”.
-<br>
-<br>
- > ## Reference to 
-[Solution of Question No. 1](https://github.com/ankittroy-21/Learnovate/blob/main/Lecture-1/solutions/HelloJava.java)
-<br>
+# ☕ What is Java?  
+
+Java is a **high-level, object-oriented, platform-independent programming language** developed by **Sun Microsystems in 1995 (now owned by Oracle)**.  
+It follows the **WORA principle — “Write Once, Run Anywhere”**.  
+
+---
+
+## 📌 Reference to Solution  
+🔗 [Solution of Question No. 1](https://github.com/ankittroy-21/Learnovate/blob/main/Lecture-1/solutions/HelloJava.java)  
+
+---
+
+## 📝 Code Explanation (Line by Line)
+
 | Line | Explanation |
 |---|---|
 | `public class HelloJava` | Declares a class named **HelloJava**. In Java, all code must be inside a class. |
@@ -18,26 +23,28 @@ WORA principle — “Write Once, Run Anywhere”.
 | `String[] args` | Used to accept command-line arguments. |
 | `System.out.println("Hello, Java!");` | Prints the text on the screen. **System.out** is the standard output stream. |
 | `}` | Closing braces end the main method and class body. |
-<br>
 
-# Java Terminologies
+---
 
-- **JDK (Java Development Kit)** - Tools for developing Java applications (includes JRE +
-compiler)
-- **JRE (Java Runtime Environment)** - Required to run Java applications (includes JVM +
-libraries)<br>
-- **JVM (Java Virtual Machine)** - Runs the Java bytecode, making Java platformindependent<br>
-- **Bytecode** - Intermediate code generated after compilation (understood by JVM)
-  
-## To Print Anything We Can Use Print Methods
+# 🔑 Java Terminologies  
 
-`System.out.print("Text you want to print");`
+- **JDK (Java Development Kit)** → Tools for developing Java applications (includes JRE + compiler)  
+- **JRE (Java Runtime Environment)** → Required to run Java applications (includes JVM + libraries)  
+- **JVM (Java Virtual Machine)** → Runs the Java bytecode, making Java platform-independent  
+- **Bytecode** → Intermediate code generated after compilation (understood by JVM)  
 
-`System.out.println("Prints new line after text");`
+---
 
-`System.out.print(456);`
+## 🖨️ Printing in Java  
 
-`System.out.println(7+21);`
+You can print in Java using the following methods:  
+
+```java
+System.out.print("Text you want to print");
+System.out.println("Prints new line after text");
+System.out.print(456);
+System.out.println(7+21);
+```
 
 ## Comments
 - **Single-line Comments :**
