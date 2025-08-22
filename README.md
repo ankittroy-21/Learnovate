@@ -16,7 +16,7 @@ It is designed to **help students practice, revise, and strengthen problem-solvi
   <summary><b> Details and link [Click Me]</b></summary>
 
 
-👋 Hey everyone!
+### 👋 Hey everyone!
 
 I’m excited to share that The Xeqt Community is officially launching, and we want YOU to be a part of it 🚀✨
 
@@ -29,9 +29,9 @@ Whether you're into web dev , ML , cybersecurity , or UI/UX  — there’s a pla
 Why fill it out?
 
 
-✅ Let us get to know your expertise and interests
-✅ Be included in relevant projects, groups, or events
-✅ Help build an awesome, collaborative community 🌟
+- ✅ Let us get to know your expertise and interests
+- ✅ Be included in relevant projects, groups, or events
+- ✅ Help build an awesome, collaborative community 🌟
 
 💬 Feel free to reach out if you have any questions or need help with the form.
 
@@ -41,7 +41,7 @@ Why fill it out?
 We can’t wait to welcome you to The Xeqt! 🎉
 
 Cheers,
-✨ The Xeqt Team
+#### The Xeqt Team
 </details>
 
 ---
