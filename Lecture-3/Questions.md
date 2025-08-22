@@ -2,13 +2,13 @@
 Integer Sum Challenge
 > Problem: Write a Java method sumPrimes(int n) that takes an integer n and returns the sum of all prime numbers up to n. You must use primitive data types (int and boolean) for all calculations and variables.
 
-Hint: Think about how you would use a boolean array (boolean[]) to keep track of prime numbers using an algorithm like the Sieve of Eratosthenes.
+Hint: Think about how you would use a boolean array (`boolean[]`) to keep track of prime numbers using an algorithm like the Sieve of Eratosthenes.
 
 # Question No. 2
 String Manipulation with char
 > Problem: Create a Java program that accepts a string as input and counts the frequency of each character. The output should display each unique character and its count.
 
-Constraint: You are only allowed to use a primitive type (char) to represent the individual characters, and a non-primitive type like an array (int[]) to store the counts. Do not use any Map or other collection classes.
+Constraint: You are only allowed to use a primitive type (`char`) to represent the individual characters, and a non-primitive type like an array (`int[]`) to store the counts. Do not use any Map or other collection classes.
 
 # Question No. 3
  Object-based Array Sorting
