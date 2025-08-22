@@ -1,22 +1,26 @@
-# Question No. 1
-Integer Sum Challenge
-> Problem: Write a Java method sumPrimes(int n) that takes an integer n and returns the sum of all prime numbers up to n. You must use primitive data types (int and boolean) for all calculations and variables.
 
-Hint: Think about how you would use a boolean array (`boolean[]`) to keep track of prime numbers using an algorithm like the Sieve of Eratosthenes.
+## Primitive Datatype
 
-# Question No. 2
-String Manipulation with char
-> Problem: Create a Java program that accepts a string as input and counts the frequency of each character. The output should display each unique character and its count.
+### Question No.1
+>Temperature Conversion**
+Write a Java method `convertCelsiusToFahrenheit(float celsius)` that takes a temperature in Celsius as a **primitive `float`** and returns the equivalent temperature in Fahrenheit. The formula is $F = (C * 9/5) + 32$.
+### Question No.2
 
-Constraint: You are only allowed to use a primitive type (`char`) to represent the individual characters, and a non-primitive type like an array (`int[]`) to store the counts. Do not use any Map or other collection classes.
+>Simple Calculation**
+Create a method `calculateTotalCost(int price, int quantity)` that accepts a product's price and quantity as **primitive `int`s**. The method should return the total cost. This problem tests basic arithmetic with primitive types.
 
-# Question No. 3
- Object-based Array Sorting
-> Problem: Design a Person class with String name and int age fields. Create an array of Person objects. Implement a simple sorting algorithm (like bubble sort or selection sort) to sort this array based on the age of each person.
+### Question No.3
 
-Focus: This problem requires you to manage an array of non-primitive objects. Your sorting logic must swap the entire Person objects (references), not just their individual fields.
-# Question No. 4
-Memory-Efficient String Check
-> Problem: Write a Java method containsDuplicate(String[] words) that checks if a given array of strings contains any duplicate words.
+>Boolean Logic**
+Write a method `isEligibleToVote(int age)` that takes an age as an **`int`** and returns a **`boolean`** value. It should return `true` if the age is 18 or greater, and `false` otherwise.
 
-Constraint: You cannot use any Set or Map data structures. You must use a nested loop approach.
+## Non-Primitive Data Types
+
+### Question No.4 
+> Array Sum**
+Given a pre-defined **integer array** `int[] numbers = {10, 20, 30, 40, 50}`, write a method `sumArray(int[] arr)` that calculates and returns the sum of all elements in the array. This problem focuses on iterating through a **non-primitive array**.
+
+### Question No.5
+
+> String Length**
+Write a method `getStringLength(String text)` that takes a **`String`** and returns its length as an **`int`**. This problem highlights the use of a simple method (`.length()`) on a non-primitive type.
