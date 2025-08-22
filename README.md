@@ -103,9 +103,9 @@ Key Topics:
 Each lecture have its **own folder** 
 
 ### Lectures List:  
-- [Lecture-1](./Lecture-1/)  
-- [Lecture-2](./Lecture-2/)  
-- [Lecture-3](./Lecture-3/)  
+- [Lecture-1](./Lectures/Lecture-1/)  
+- [Lecture-2](./Lectures/Lecture-2/)  
+- [Lecture-3](./Lectures/Lecture-3/)  
 
 *(More folders will be added as sessions continue 🚀)*  
 
