@@ -9,6 +9,37 @@ It is designed to **help students practice, revise, and strengthen problem-solvi
 
 > ⚡ Remember: The goal is to **practice first**. Only check solutions when you’re stuck after genuine effort.  
 
+
+
+### ⚠️Join the Xeqt Comunity By filling the Form
+<details>
+  <summary><b> Details and link [Click Me]</b></summary>
+👋 Hey everyone!
+
+I’m excited to share that The Xeqt Community is officially launching, and we want YOU to be a part of it 🚀✨
+
+This is your chance to showcase your programming skills , interests , and how you’d like to contribute 🤝.
+Whether you're into web dev , ML , cybersecurity , or UI/UX  — there’s a place for you!
+
+📋 Please take a couple of minutes to fill out our application form here:
+👉 https://forms.gle/zKa1cUpXmvpHibuT7
+
+Why fill it out?
+✅ Let us get to know your expertise and interests
+✅ Be included in relevant projects, groups, or events
+✅ Help build an awesome, collaborative community 🌟
+
+💬 Feel free to reach out if you have any questions or need help with the form.
+
+
+> Contact Me at Telegram : `@itz_oxi`
+
+We can’t wait to welcome you to The Xeqt! 🎉
+
+Cheers,
+✨ The Xeqt Team
+</details>
+
 ---
 
 ## 🌟 Why this Repository?
@@ -67,7 +98,7 @@ Key Topics:
 
 Each lecture have its **own folder** 
 
-### Example:  
+### Lectures List:  
 - [Lecture-1](./Lecture-1/)  
 - [Lecture-2](./Lecture-2/)  
 - [Lecture-3](./Lecture-3/)  
@@ -96,9 +127,9 @@ We welcome contributions from everyone 🎉
 - 🐞 Fix mistakes in code or explanations  
 
 To contribute:  
-1. Fork this repo  
+1. **Fork** this repo  
 2. Create a new branch (`your-feature-name`)  
-3. Commit your changes  
+3. Commit your changes 
 4. Open a **Pull Request**  
 
 ---
