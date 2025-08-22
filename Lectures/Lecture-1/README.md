@@ -6,7 +6,7 @@ It follows the **WORA principle — “Write Once, Run Anywhere”**.
 ---
 
 ## 📌 Reference to Solution  
-🔗 [Solution of Question No. 1](https://github.com/ankittroy-21/Learnovate/blob/main/Lecture-1/solutions/HelloJava.java)  
+🔗 [Solution of Question No. 1](https://github.com/ankittroy-21/Learnovate/blob/main/Lectures/Lecture-1/solutions/HelloJava.java))  
 
 ---
 
