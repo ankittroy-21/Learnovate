@@ -105,7 +105,9 @@ Each lecture have its **own folder**
 ### Lectures List:  
 - [Lecture-1](./Lectures/Lecture-1/)  
 - [Lecture-2](./Lectures/Lecture-2/)  
-- [Lecture-3](./Lectures/Lecture-3/)  
+- [Lecture-3](./Lectures/Lecture-3/)
+-  [Lecture-4](./Lectures/Lecture-4/)
+  
 
 *(More folders will be added as sessions continue 🚀)*  
 
