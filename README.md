@@ -102,7 +102,7 @@ Key Topics:
 
 Each lecture have its **own folder** 
 
-### Lectures List:  
+### Lectures List  
 - [Lecture-1](./Lectures/Lecture-1/)  
 - [Lecture-2](./Lectures/Lecture-2/)  
 - [Lecture-3](./Lectures/Lecture-3/)
@@ -110,6 +110,13 @@ Each lecture have its **own folder**
   
 
 *(More folders will be added as sessions continue 🚀)*  
+
+### Roadmap 
+> Click Below To View 🌐
+
+
+[![Java Roadmap](https://img.shields.io/badge/Java%20Roadmap-Live%20Demo-1E90FF?style=for-the-badge&logo=java&logoColor=white)](https://ankittroy-21.github.io/Learnovate/Roadmap/)
+
 
 ---
 
