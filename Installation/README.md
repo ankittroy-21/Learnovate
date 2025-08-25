@@ -20,7 +20,8 @@ We'll cover two fantastic editors:
 3.  [Option A: Setup with Visual Studio Code](https://github.com/ankittroy-21/Learnovate/blob/main/Installation/README.md#-option-a-setup-with-visual-studio-code)
 4.  [Option B: Setup with IntelliJ IDEA](https://github.com/ankittroy-21/Learnovate/blob/main/Installation/README.md#-option-b-setup-with-intellij-idea)
 5.  [Your First Java Program](https://github.com/ankittroy-21/Learnovate/blob/main/Installation/README.md#-your-first-java-program)
-6.  [Need Help?](https://github.com/ankittroy-21/Learnovate/blob/main/Installation/README.md#-need-help)
+6.  [Need Help?](https://github.com/ankittroy-21/Learnovate/blob/main/Installation/README.md#need-help)
+7.  
 
 ---
 
