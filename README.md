@@ -10,10 +10,14 @@ It is designed to **help students practice, revise, and strengthen problem-solvi
 > ⚡ Remember: The goal is to **practice first**. Only check solutions when you’re stuck after genuine effort.  
 
 
+[![Join Learnnovate Discussions](https://img.shields.io/badge/🚀_Learnnovate-Discussions-2EA44F?style=for-the-badge&logo=github&logoColor=white&labelColor=1A1B27)](https://github.com/ankittroy-21/Learnovate/discussions)
 
 ### ⚠️Join the Xeqt Comunity By filling the Form
 <details>
   <summary><b> Details and link [Click Me]</b></summary>
+
+
+  
 
 
 ### 👋 Hey everyone!
