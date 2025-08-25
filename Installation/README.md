@@ -124,7 +124,7 @@ public class HelloWorld {
 
 ---
 
-## Need Help?
+## Need Help❓
 
 *   **Getting an error?** The number one tip is to **read the error message carefully**. It often tells you exactly what's wrong.
 *   **Stuck on installation?** Search for your error message on [Stack Overflow](https://stackoverflow.com/). It's very likely someone has had the same problem and found a solution.
