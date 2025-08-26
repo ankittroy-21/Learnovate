@@ -1,0 +1,105 @@
+/* Import a cool font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
+/* Basic styles for the whole page */
+body {
+    background-color: #314047; /* A dark blue-grey background */
+    color: #2caabe; /* A light grey color for text */
+    font-family: 'Poppins', sans-serif; /* Use the Poppins font */
+    margin: 0; /* Remove default browser spacing */
+}
+
+/* --- Top Navigation Bar --- */
+.top-nav {
+    display: flex; /* This is key! It lets us align items side-by-side */
+    justify-content: space-between; /* Puts space between the left, center, and right sections */
+    align-items: center; /* Vertically aligns everything in the middle */
+    padding: 10px 20px; /* Adds some spacing inside the nav bar */
+    background-color: #d6dfe4; /* White background */
+    border-bottom: 1px solid #ddd;
+}
+
+.logo {
+    height: 75px; /* Set the logo height */
+    width: auto; /* Maintain aspect ratio */
+    margin-right: 20px;
+}
+
+.top-nav a {
+    color: #c15151; /* Dark text color for links */
+    text-decoration: none; /* Remove underline from links */
+    margin: 0 10px;
+}
+
+.nav-center input {
+    width: 400px; /* Make the search bar wide */
+    padding: 8px;
+    border: 2px solid #b47777;
+    border-radius: 5px;
+}
+
+/* Styling for the new welcome message */
+.community-welcome {
+    font-size: 16px;
+    font-weight: bold;
+    color: #4db6ac; /* A bright teal to grab attention */
+    background-color: rgba(0, 0, 0, 0.2); /* A subtle dark, semi-transparent background */
+    display: inline-block; /* Allows the background to wrap tightly around the text */
+    padding: 8px 15px;
+    border-radius: 20px; /* Rounded corners */
+    margin-top: 20px; /* Adds some space above it */
+}
+
+/* --- Language Navigation Bar --- */
+.language-nav {
+    display: flex;
+    justify-content: center; /* Center the language links */
+    background-color: #F2BFA4; /* A slightly lighter dark blue */
+    padding: 10px 0;
+}
+
+.language-nav a {
+    color: #ecf0f1;
+    text-decoration: none;
+    padding: 0 15px;
+}
+
+/* --- Hero Section (Main Content) --- */
+.hero-section {
+    text-align: center; /* Center all the text inside */
+    padding-top: 100px; /* Push the content down from the top */
+    padding-bottom: 150px;
+}
+
+.hero-section h1 {
+    font-size: 48px; /* Big title */
+    margin-bottom: 10px;
+}
+
+.hero-section p {
+    font-size: 20px;
+    margin-bottom: 20px;
+}
+
+.hero-section .guarantee {
+    font-size: 16px;
+}
+
+.start-btn {
+    background-color: transparent; /* No background color */
+    color: #3498db; /* Blue text */
+    border: 2px solid #3498db; /* Blue border */
+    padding: 15px 30px;
+    font-size: 18px;
+    font-weight: bold;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    transition: background-color 0.3s, color 0.3s; /* Smooth transition for hover effect */
+}
+
+/* This makes the button change color when you hover your mouse over it! */
+.start-btn:hover {
+    background-color: #F2BFA4;
+    color: white;
+}
