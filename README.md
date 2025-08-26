@@ -119,7 +119,7 @@ Each lecture have its **own folder**
 > Click Below To View 🌐
 
 
-[![Java Roadmap](https://img.shields.io/badge/Java%20Roadmap-Live%20Demo-1E90FF?style=for-the-badge&logo=java&logoColor=white)](https://ankittroy-21.github.io/Learnovate/Roadmap/)
+[![Java Roadmap](https://img.shields.io/badge/Java%20Roadmap-Live%20Demo-1E90FF?style=for-the-badge&logo=java&logoColor=white)](https://ankittroy-21.github.io/Learnovate/Roadmap/index.html)
 
 
 ---
