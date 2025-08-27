@@ -1,26 +1,14 @@
+# Question No. 1
+> Write a program to sum three numbers in Java.
 
-## Primitive Datatype
+# Question No. 2
+> Write a program to calculate CGPA using marks of three subjects (out of 100).
 
-### Question No.1
->Temperature Conversion -
-Write a Java method `convertCelsiusToFahrenheit(float celsius)` that takes a temperature in Celsius as a **primitive `float`** and returns the equivalent temperature in Fahrenheit. The formula is $F = (C * 9/5) + 32$.
-### Question No.2
+# Question No. 3
+> Write a Java program which asks the user to enter his/her name and greets them with "Hello <name>, have a good day" text.
 
->Simple Calculation - 
-Create a method `calculateTotalCost(int price, int quantity)` that accepts a product's price and quantity as **primitive `int`s**. The method should return the total cost. This problem tests basic arithmetic with primitive types.
+# Question No. 4
+> Write a Java program to convert Kilometers to miles.
 
-### Question No.3
-
->Boolean Logic -
-Write a method `isEligibleToVote(int age)` that takes an age as an **`int`** and returns a **`boolean`** value. It should return `true` if the age is 18 or greater, and `false` otherwise.
-
-## Non-Primitive Data Types
-
-### Question No.4 
-> Array Sum -
-Given a pre-defined **integer array** `int[] numbers = {10, 20, 30, 40, 50}`, write a method `sumArray(int[] arr)` that calculates and returns the sum of all elements in the array. This problem focuses on iterating through a **non-primitive array**.
-
-### Question No.5
-
-> String Length -
-Write a method `getStringLength(String text)` that takes a **`String`** and returns its length as an **`int`**. This problem highlights the use of a simple method (`.length()`) on a non-primitive type.
+# Question No. 5
+> Write a Java program to detect whether a number entered by the user is integer or not.
