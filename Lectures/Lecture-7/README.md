@@ -32,7 +32,79 @@ public static void sayHello() {
 | `{}` | Contains the actual code that the method executes | `{ System.out.println("Hello"); }` |
 | `return` | Statement used to return a value from the method | `return result;` |
 
-## Types of Methods
+### Step 1: Understand the Basic Structure
+A method has three main parts:
+1. **Method Declaration** - The method's "ID card"
+2. **Method Body** - The actual instructions
+3. **Method Call** - Using the method in your program
+
+### Step 2: Method Declaration
+This is where you define the method's basic information:
+
+```java
+public static void methodName() {
+    // This is the method declaration
+}
+```
+### Step 3: Method Body
+This is where you write what the method actually does:
+```java
+public static void greet() {
+    // Method body starts here
+    System.out.println("Hello!");
+    System.out.println("Welcome to Java!");
+    // Method body ends here
+}
+```
+### Step 4: Method Call
+This is how you use the method in your program:
+```java
+public class Main {
+    public static void main(String[] args) {
+        greet();  // This is the method call
+    }
+    
+    public static void greet() {
+        System.out.println("Hello!");
+    }
+}
+```
+
+### Using the Method:
+```java
+public class Main {
+    public static void main(String[] args) {
+        
+        // Step 3: Call the method
+        printMessage();  // This executes the method
+        
+        System.out.println("Back in main method");
+        
+        // You can call it multiple times
+        printMessage();  // Calls it again
+    }
+    
+    public static void printMessage() {
+        System.out.println("This is my first method!");
+        System.out.println("It prints two lines of text.");
+    }
+}
+```
+
+## Key Rules to Remember
+- Method Names should be descriptive verbs (printMessage, calculateSum, getUserInput)
+
+- Method Declaration must include return type (void if no return)
+
+- Method Body goes inside curly braces {}
+
+- Method Call uses the exact same name followed by ()
+
+- Order Matters - Methods must be defined before or after main, but calls must be after definition
+
+---
+
+# Types of Methods
 
 ### Predefined Methods 
 These are ready-made methods that Java provides for you! You don't need to create them - just use them.
