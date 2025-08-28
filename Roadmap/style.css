@@ -3,7 +3,7 @@
 
 /* Basic styles for the whole page */
 body {
-    background-color: #314047; /* A dark blue-grey background */
+    background-color:#ffff; /* A dark blue-grey background */
     color: #2caabe; /* A light grey color for text */
     font-family: 'Poppins', sans-serif; /* Use the Poppins font */
     margin: 0; /* Remove default browser spacing */
@@ -15,7 +15,7 @@ body {
     justify-content: space-between; /* Puts space between the left, center, and right sections */
     align-items: center; /* Vertically aligns everything in the middle */
     padding: 10px 20px; /* Adds some spacing inside the nav bar */
-    background-color: #d6dfe4; /* White background */
+    background-color: #e0b0ff; /* White background */
     border-bottom: 1px solid #ddd;
 }
 
@@ -26,7 +26,7 @@ body {
 }
 
 .top-nav a {
-    color: #c15151; /* Dark text color for links */
+    color: #ffffff; /* Dark text color for links */
     text-decoration: none; /* Remove underline from links */
     margin: 0 10px;
 }
@@ -34,7 +34,7 @@ body {
 .nav-center input {
     width: 400px; /* Make the search bar wide */
     padding: 8px;
-    border: 2px solid #b47777;
+    border: 2px solid #81599F;
     border-radius: 5px;
 }
 
@@ -54,12 +54,12 @@ body {
 .language-nav {
     display: flex;
     justify-content: center; /* Center the language links */
-    background-color: #F2BFA4; /* A slightly lighter dark blue */
+    background-color: #81599F; /* A slightly lighter dark blue */
     padding: 10px 0;
 }
 
 .language-nav a {
-    color: #ecf0f1;
+    color: #ffffff;
     text-decoration: none;
     padding: 0 15px;
 }
@@ -88,7 +88,7 @@ body {
 .start-btn {
     background-color: transparent; /* No background color */
     color: #3498db; /* Blue text */
-    border: 2px solid #3498db; /* Blue border */
+    border: 2px solid #3d29eb; /* Blue border */
     padding: 15px 30px;
     font-size: 18px;
     font-weight: bold;
