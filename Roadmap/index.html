@@ -4,48 +4,155 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coding Playground</title>
-    <link rel="stylesheet" href="style.css">
-      <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB" crossorigin="anonymous">
-  <link
-    rel="stylesheet"
-    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
-  />
-
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/css/all.min.css" integrity="sha512-DxV+EoADOkOygM4IR9yXP8Sb2qwgidEmeqAEmDKIOfPRQZOWbXCzLC6vjbZyy0vPisbH2SyW27+ddLVCN+OMzQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
 </head>
 <body>
-
-    <header class="top-nav">
+    <nav class="sticky-nav" id="stickyNav">
         <div class="nav-left">
-            <img src="logo.PNG" alt="Logo" class="logo">
+            <img src="assets/logo.PNG" alt="Logo" class="logo">
         </div>
-        <div class="nav-center">
-            <input type="text" placeholder="Search tutorials, courses and ebooks...">
-        </div>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="#" class="active">Overview</a></li>
+            <li><a href="#">Mentors</a></li>
+            <li><a href="#">Curriculum</a></li>
+            <li><a href="#">FAQs</a></li>
+            <li><a href="#">About Us</a></li>
+            <li><a href="#">Careers</a></li>
+            <li><a href="#">Contact Us</a></li>
+        </ul>
+
         <div class="nav-right">
-            <a href="#">Roadmap</a>
-            <a href="#">Blog</a>
+            
+            <div class="nav-right-links">
+                <button class="enroll-btn">Join Us</button>
+            </div>
         </div>
-    </header>
 
-    <nav class="language-nav">
-        <a href="#">&lt;</a>
-        <a href="#">Java</a>
-        <a href="#">&gt;</a>
+        <div class="hamburger" id="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
     </nav>
+    <nav class="language-nav">
+       <div class="marquee-container">
+    <div class="marquee-text">
+        Welcome to the XEQT Community! Explore the highly enriched beginner friendly researched content nurtured by our members.
+    </div>
+</div>
+    </nav>
+    <section class="welcome-section">
+        <main class="hero-section">
+         <button class="start-btn">JAVA ROADMAP</button>
+        </main>
+    </section>
+    <section class="curriculum-section">
+        <h2 class="section-subtitle">CURRICULUM</h2>
+        <h1 class="section-title">What will you <span class="highlight">learn?</span></h1>
+        <p class="section-description">The most beginner-friendly curriculum provided by XEQT community.</p>
 
-    <main class="hero-section">
-    <div class="star-icon">✦</div>
+        <div class="curriculum-container">
+            <div class="timeline">
+                <div class="timeline-item">
+                    <span class="week-tag">WEEK 0</span>
+                    <div class="timeline-dot"></div>
+                    <div class="timeline-line"></div>
+                </div>
+            </div>
+            <div class="modules-list">
+                <div class="module">
+                    <div class="module-header active">
+                        <div class="header-left">
+                            <i class="fas fa-ship icon"></i>
+                            <div>
+                                <p class="preview-tag">START HERE</p>
+                                <h3>Essential Prerequisites</h3>
+                            </div>
+                        </div>
+                        <div class="header-right">
+                            <span><i class="fa-solid fa-book"></i> 2 NOTES LESSONS</span>
+                            <i class="fas fa-chevron-up chevron-icon"></i>
+                        </div>
+                    </div>
+                    <div class="module-content">
+                        <div class="lesson-item">
+                            <div class="lesson-info">
+                               <i class="fa-solid fa-0">.</i>
+                                <div class="lesson-text">
+                                    <span>NOTE LESSON</span>
+                                    <p>Intro to JAVA</p>
+                                </div>
+                            </div>
+                            <a href="#" class="watch-btn">The Crux <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                        <div class="lesson-item">
+                            <div class="lesson-info">
+                                <i class="fa-solid fa-1">.</i>
+                                <div class="lesson-text">
+                                    <span>NOTE LESSON</span>
+                                    <p>THE SECRETS OF JAVA FOR BEGINNER</p>
+                                </div>
+                            </div>
+                            <a href="#" class="watch-btn">THE CRUX <i class="fas fa-arrow-right"></i></a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="cta-section">
+        <div class="cta-container">
+            <div class="cta-content">
+                <h2>Be a part of a new era in programming.<br>Be a XEQT Engineer!</h2>
+                <button class="cta-btn">JOIN Now</button>
+            </div>
+        </div>
+    </section>
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <span>EXQT</span>
+                    <p>XEQT COMMUNITY © 2025</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Contact us</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="contact-col">
+                    <i class="fas fa-headset"></i>
+                    <p>9000000008</p>
+                </div>
+                <div class="contact-col">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <p>For Program Related Enquiries</p>
+                        <a href="mailto:xeqtcommunity@gmail.com">xeqtcommunity@gmail.com</a>
+                    </div>
+                </div>
+                <div class="contact-col">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <p>For Doubts</p>
+                        <a href="mailto:xeqtcommunity@gmail.com">xeqtcommunity@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     
-    <h1>Java RoadMap</h1>
-     <div class="star-icon">✦</div>
-    <p class="community-welcome">A project by the <strong>xeqt community</strong> for aspiring developers.</p>
-    
-    <p>Start your journey to becoming a professional developer today.</p>
-    <button class="start-btn">Start Future</button>
-</main>
-<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js" integrity="sha384-FKyoEForCGlyvwx9Hj09JcYn3nv7wiPVlz7YYwJrWVcXK/BmnVDxM+D2scQbITxI" crossorigin="anonymous"></script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/7.0.0/js/fontawesome.min.js" integrity="sha512-QPVPxxncZwuT317gBTFFlXTykloTFA4jnd5j/aFco+Nd/0eqFsp/zGdhjuwkRoiPMsjvkjHkp0DGRPBxF+d3Pw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="js/script.js"></script>
 </body>
 </html>
