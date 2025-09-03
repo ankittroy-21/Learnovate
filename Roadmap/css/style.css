@@ -563,3 +563,151 @@ body {
 .contact-col a:hover {
     text-decoration: underline;
 }
+
+/* --- NEW: Content Page Styles --- */
+.content-page {
+    padding: 60px 5%;
+    background-color: #fff;
+    color: #333;
+}
+
+.content-page .container {
+    max-width: 900px;
+    margin: 0 auto;
+    background: #f9f9f9;
+    padding: 40px;
+    border-radius: 20px;
+    box-shadow: 0 8px 30px rgba(0, 0, 0, 0.08);
+}
+
+.content-section {
+    margin-bottom: 40px;
+}
+
+.content-page h1, .content-page h2 {
+    font-weight: 700;
+    color: #333;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #eee;
+}
+
+.content-page h1 {
+    font-size: 2.5rem;
+    color: #81599F; /* Matching highlight color */
+}
+
+.content-page h2 {
+    font-size: 2rem;
+}
+
+.content-page h3 {
+    font-size: 1.5rem;
+    font-weight: 600;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
+
+.content-page p {
+    font-size: 1.1rem;
+    line-height: 1.8;
+    color: #555;
+}
+
+.content-page strong {
+    color: #ef5742; /* Matching CTA color */
+}
+
+.content-page a {
+    color: #f2442d;
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.content-page a:hover {
+    color: #ef5742;
+    text-decoration: underline;
+}
+
+.content-page .solution-link {
+    font-size: 1.2rem;
+}
+
+.content-page hr {
+    border: 0;
+    height: 1px;
+    background: #ddd;
+    margin: 50px 0;
+}
+
+.content-page ul {
+    list-style: none;
+    padding-left: 0;
+}
+
+.content-page ul li {
+    background: url('data:image/svg+xml;utf8,<svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="%2381599F" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" class="feather feather-check-circle"><path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path><polyline points="22 4 12 14.01 9 11.01"></polyline></svg>') no-repeat left center;
+    padding: 10px 0 10px 40px;
+    font-size: 1.1rem;
+    line-height: 1.7;
+    border-bottom: 1px solid #eee;
+}
+
+.content-page ul li strong {
+    color: #333;
+}
+
+
+/* Table Styles */
+.table-container {
+    overflow-x: auto;
+    margin-top: 20px;
+}
+
+.content-page table {
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+}
+
+.content-page th, .content-page td {
+    padding: 15px;
+    text-align: left;
+    border-bottom: 1px solid #ddd;
+}
+
+.content-page th {
+    background-color: #81599F;
+    color: white;
+    font-weight: 600;
+}
+
+.content-page tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+.content-page tr:hover {
+    background-color: #f1f1f1;
+}
+
+/* Code Block Styles */
+.content-page pre {
+    background-color: #2d2d2d;
+    color: #f8f8f2;
+    padding: 20px;
+    border-radius: 10px;
+    overflow-x: auto;
+    font-family: 'Courier New', Courier, monospace;
+    font-size: 0.95rem;
+}
+
+.content-page code {
+    font-family: 'Courier New', Courier, monospace;
+}
+
+.content-page td code {
+    background: #e7e7e7;
+    padding: 3px 6px;
+    border-radius: 4px;
+    color: #333;
+}
