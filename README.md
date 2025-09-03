@@ -7,10 +7,22 @@ Welcome to the **Learnovate Practice Repository** 🎉
 This repository is a collection of **questions & solutions** from **JAVA & Data Structures & Algorithms (DSA)** sessions conducted at **BBD University** by Learnovate.  
 It is designed to **help students practice, revise, and strengthen problem-solving skills** while building a strong foundation in **Java & DSA**.  
 
-> ⚡ Remember: The goal is to **practice first**. Only check solutions when you’re stuck after genuine effort.  
-
+> ⚡ Remember: The goal is to **practice first**. Only check solutions when you’re stuck after genuine effort.
+  
+### Discussions
+> Click Below to join Discussions
 
 [![Join Learnnovate Discussions](https://img.shields.io/badge/🚀_Learnnovate-Discussions-2EA44F?style=for-the-badge&logo=github&logoColor=white&labelColor=1A1B27)](https://github.com/ankittroy-21/Learnovate/discussions)
+
+### Roadmap 
+> Click Below To View 🌐
+
+
+[![Java Roadmap](https://img.shields.io/badge/Java%20Roadmap-Live%20Demo-1E90FF?style=for-the-badge&logo=java&logoColor=white)](https://ankittroy-21.github.io/Learnovate/Roadmap/index.html)
+
+
+---
+
 
 ### ⚠️Join the Xeqt Comunity By filling the Form
 <details>
@@ -115,14 +127,6 @@ Each lecture have its **own folder**
 
 *(More folders will be added as sessions continue 🚀)*  
 
-### Roadmap 
-> Click Below To View 🌐
-
-
-[![Java Roadmap](https://img.shields.io/badge/Java%20Roadmap-Live%20Demo-1E90FF?style=for-the-badge&logo=java&logoColor=white)](https://ankittroy-21.github.io/Learnovate/Roadmap/index.html)
-
-
----
 
 ## 🏆 How to Use This Repo?  
 
