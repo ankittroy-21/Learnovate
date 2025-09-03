@@ -2,6 +2,59 @@
 const stickyNav = document.getElementById('stickyNav');
 const hamburger = document.getElementById('hamburger');
 const navLinks = document.getElementById('navLinks');
+// Auto-changing text for the curriculum section
+const changingText = document.getElementById('changing-text');
+const words = ['learn?', 'build?', 'master?', 'create?', 'develop?'];
+let wordIndex = 0;
+let letterIndex = 0;
+let currentWord = '';
+let isDeleting = false;
+let typingSpeed = 150;
+
+function type() {
+    // Current word
+    const fullWord = words[wordIndex];
+    
+    // Check if deleting
+    if (isDeleting) {
+        // Remove char
+        currentWord = fullWord.substring(0, currentWord.length - 1);
+    } else {
+        // Add char
+        currentWord = fullWord.substring(0, currentWord.length + 1);
+    }
+    
+    // Insert word into span
+    changingText.textContent = currentWord;
+    
+    // Initial type speed
+    let typeSpeed = typingSpeed;
+    
+    if (isDeleting) {
+        typeSpeed /= 1.5; // Speed up when deleting
+    }
+    
+    // If word is complete
+    if (!isDeleting && currentWord === fullWord) {
+        typeSpeed = 5000; // Pause at end of word
+        isDeleting = true;
+    } else if (isDeleting && currentWord === '') {
+        isDeleting = false;
+        wordIndex++;
+        
+        // Move to next word or restart
+        if (wordIndex >= words.length) {
+            wordIndex = 0;
+        }
+        
+        typeSpeed = 500; // Pause before starting next word
+    }
+    
+    setTimeout(type, typeSpeed);
+}
+
+// Start the typing effect when page loads
+document.addEventListener('DOMContentLoaded', type);
 
 window.addEventListener('scroll', () => {
     if (window.scrollY > 100) {
