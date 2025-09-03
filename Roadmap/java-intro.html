@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Intro to Java - Coding Playground</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <nav class="sticky-nav" id="stickyNav">
+        <div class="nav-left">
+            <img src="assets/logo.PNG" alt="Logo" class="logo">
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Overview</a></li>
+            <li><a href="index.html">Mentors</a></li>
+            <li><a href="index.html">Curriculum</a></li>
+            <li><a href="index.html">FAQs</a></li>
+            <li><a href="index.html">About Us</a></li>
+            <li><a href="index.html">Careers</a></li>
+            <li><a href="index.html">Contact Us</a></li>
+        </ul>
+
+        <div class="nav-right">
+            
+            <div class="nav-right-links">
+                <button class="enroll-btn">Join Us</button>
+            </div>
+        </div>
+
+        <div class="hamburger" id="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+
+    <main class="content-page">
+        <div class="container">
+            <div class="content-section">
+                <h1>☕ What is Java?</h1>
+                <p>Java is a <strong>high-level, object-oriented, platform-independent programming language</strong> developed by <strong>Sun Microsystems in 1995 (now owned by Oracle)</strong>. It follows the <strong>WORA principle — “Write Once, Run Anywhere”</strong>.</p>
+            </div>
+        
+            <hr>
+        
+            <div class="content-section">
+                <h2>📌 Reference to Solution</h2>
+                <p class="solution-link">🔗 <a href="https://github.com/ankittroy-21/Learnovate/blob/main/Lectures/Lecture-1/solutions/HelloJava.java" target="_blank" rel="noopener noreferrer">Solution of Question No. 1</a></p>
+            </div>
+        
+            <hr>
+        
+            <div class="content-section">
+                <h2>📝 Code Explanation (Line by Line)</h2>
+                <div class="table-container">
+                    <table>
+                        <thead>
+                            <tr>
+                                <th>Line</th>
+                                <th>Explanation</th>
+                            </tr>
+                        </thead>
+                        <tbody>
+                            <tr>
+                                <td><code>public class HelloJava</code></td>
+                                <td>Declares a class named <strong>HelloJava</strong>. In Java, all code must be inside a class.</td>
+                            </tr>
+                            <tr>
+                                <td><code>{</code></td>
+                                <td>Opening brace marks the beginning of the class body.</td>
+                            </tr>
+                            <tr>
+                                <td><code>public static void main(String[] args)</code></td>
+                                <td>The <strong>main method</strong> – it's the entry point of every Java program.</td>
+                            </tr>
+                            <tr>
+                                <td><code>public</code></td>
+                                <td>Makes the method accessible from anywhere.</td>
+                            </tr>
+                             <tr>
+                                <td><code>static</code></td>
+                                <td>Means the method can run without creating an object of the class.</td>
+                            </tr>
+                             <tr>
+                                <td><code>void</code></td>
+                                <td>Indicates the method doesn't return any value.</td>
+                            </tr>
+                             <tr>
+                                <td><code>String[] args</code></td>
+                                <td>Used to accept command-line arguments.</td>
+                            </tr>
+                             <tr>
+                                <td><code>System.out.println("Hello, Java!");</code></td>
+                                <td>Prints the text on the screen. <strong>System.out</strong> is the standard output stream.</td>
+                            </tr>
+                            <tr>
+                                <td><code>}</code></td>
+                                <td>Closing braces end the main method and class body.</td>
+                            </tr>
+                        </tbody>
+                    </table>
+                </div>
+            </div>
+        
+            <hr>
+        
+            <div class="content-section">
+                <h1>🔑 Java Terminologies</h1>
+                <ul>
+                    <li><strong>JDK (Java Development Kit)</strong> → Tools for developing Java applications (includes JRE + compiler)</li>
+                    <li><strong>JRE (Java Runtime Environment)</strong> → Required to run Java applications (includes JVM + libraries)</li>
+                    <li><strong>JVM (Java Virtual Machine)</strong> → Runs the Java bytecode, making Java platform-independent</li>
+                    <li><strong>Bytecode</strong> → Intermediate code generated after compilation (understood by JVM)</li>
+                </ul>
+            </div>
+        
+            <hr>
+        
+            <div class="content-section">
+                <h2>🖨️ Printing in Java</h2>
+                <p>You can print in Java using the following methods:</p>
+                <pre><code class="language-java">System.out.print("Text you want to print");
+System.out.println("Prints new line after text");
+System.out.print(456);
+System.out.println(7+21);</code></pre>
+            </div>
+            
+            <hr>
+
+            <div class="content-section">
+                <h2>Comments</h2>
+                <h3>Single-line Comments:</h3>
+                <p>Single-line comments start with two forward slashes (//). Any text between // and the end of the line is ignored by Java (will not be executed).</p>
+                <pre><code class="language-java">// This is a comment
+System.out.println("Learn Java");</code></pre>
+                <h3>Multi-line Comments:</h3>
+                <p>Multi-line comments start with /* and ends with */. Any text between /* and */ will be ignored by Java.</p>
+                <pre><code class="language-java">/* The code below will print the words Hello World
+to the screen, and it is amazing */
+System.out.println("Comments make code more readable");</code></pre>
+            </div>
+        </div>
+    </main>
+    
+
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <span>EXQT</span>
+                    <p>XEQT COMMUNITY © 2025</p>
+                </div>
+                <div class="footer-links">
+                    <a href="#">Terms & Conditions</a>
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Contact us</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="contact-col">
+                    <i class="fas fa-headset"></i>
+                    <p>9000000008</p>
+                </div>
+                <div class="contact-col">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <p>For Program Related Enquiries</p>
+                        <a href="mailto:xeqtcommunity@gmail.com">xeqtcommunity@gmail.com</a>
+                    </div>
+                </div>
+                <div class="contact-col">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <p>For Doubts</p>
+                        <a href="mailto:xeqtcommunity@gmail.com">xeqtcommunity@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="js/script.js"></script>
+</body>
+</html>
