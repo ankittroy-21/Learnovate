@@ -1,4 +1,3 @@
-
 @media (max-width: 1200px) {
     .search-box {
         width: 300px;
@@ -100,6 +99,17 @@
     }
     .contact-col {
         align-items: center;
+    }
+
+    /* --- NEW: Content Page Responsive --- */
+    .content-page .container {
+        padding: 20px;
+    }
+    .content-page h1 {
+        font-size: 2rem;
+    }
+    .content-page h2 {
+        font-size: 1.6rem;
     }
 }
 
