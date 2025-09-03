@@ -38,6 +38,77 @@ body {
     margin-right: 20px;
 }
 
+
+/* Code block styling */
+.code-block {
+    background: #2c2c2c;
+    border-radius: 8px;
+    padding: 15px;
+    margin: 15px 0;
+    overflow-x: auto;
+    border: 1px solid #555;
+    position: relative;
+}
+
+.code-block pre {
+    margin: 0;
+    font-family: 'Poppins', sans-serif; /* Using your existing font */
+    font-size: 16px;
+    line-height: 1.5;
+    white-space: pre-wrap;
+    word-wrap: break-word;
+    color: #fff;
+}
+
+.code-comment {
+    color: #a8a8a8;
+    font-style: italic;
+}
+
+.code-keyword {
+    color: #ff7b72;
+    font-weight: bold;
+}
+
+.code-string {
+    color: #a5d6ff;
+}
+
+.code-class {
+    color: #79c0ff;
+}
+
+.code-method {
+    color: #ffa657;
+}
+
+.code-annotation {
+    color: #d2a8ff;
+}
+
+/* Copy button styling */
+.copy-btn {
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    background: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    color: white;
+    padding: 5px 10px;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 12px;
+    transition: all 0.3s ease;
+}
+
+.copy-btn:hover {
+    background: rgba(255, 255, 255, 0.2);
+}
+
+.copy-btn.copied {
+    background: #4caf50;
+    border-color: #4caf50;
+}
 .nav-links {
     display: flex;
     list-style: none;

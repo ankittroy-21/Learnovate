@@ -10,6 +10,26 @@ let letterIndex = 0;
 let currentWord = '';
 let isDeleting = false;
 let typingSpeed = 150;
+// Copy code functionality
+function copyCode(button) {
+    const codeBlock = button.nextElementSibling;
+    const textToCopy = codeBlock.textContent;
+    
+    navigator.clipboard.writeText(textToCopy).then(() => {
+        // Change button text temporarily
+        const originalText = button.textContent;
+        button.textContent = 'Copied!';
+        button.classList.add('copied');
+        
+        setTimeout(() => {
+            button.textContent = originalText;
+            button.classList.remove('copied');
+        }, 2000);
+    }).catch(err => {
+        console.error('Failed to copy: ', err);
+    });
+}
+
 
 function type() {
     // Current word
