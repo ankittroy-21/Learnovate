@@ -35,9 +35,31 @@
 **A:** No. The order of the modifiers public and static is interchangeable. Both public static void main(String[] args) and static public void main(String[] args) are valid.
 
 
+### Q6:  What is meant by orientation?
+> Orientation refers to Perspective (or) Point of view (or) the way we look at things. In programming, it often relates to different approaches like object-oriented programming.
+
+---
+
+### Q7: Why should we enclose main() method within a class?
+>An error message would be displayed as "Main method not found error" because the JVM, which is external to your class, would not have access to the main() method.
+---
+
+### Q8:What happens if we do not declare main() as public?
+> n error message would be displayed as "Main method not found error" because the JVM, which is external to your class, would not have access to the main() method.
+
+---
+
+### Q9:  What happens if we do not declare main() as static?
+>An error message would be displayed as "Main method is not static error" because the JVM would be unable to call the method without an object instance.
+---
+
+### Q10: Which command in java is used to invoke the java compiler?
+> javac command is used to invoke the Java compiler. For example, javac MyProgram.java compiles the source file into a .class file.
+
 
 
 ## Intermediate-Level Questions 🧑‍💻
+
 
 
 ## Expert-Level Questions 🚀
