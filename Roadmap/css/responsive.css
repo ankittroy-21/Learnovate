@@ -40,7 +40,7 @@
     }
 
     .hamburger.active div:nth-child(1) {
-        transform: rotate(-45deg) translate(-5px, 6px);
+        transform: rotate(-45deg) translate(-6px, 6.5px);
     }
 
     .hamburger.active div:nth-child(2) {
@@ -48,7 +48,7 @@
     }
 
     .hamburger.active div:nth-child(3) {
-        transform: rotate(45deg) translate(-5px, -6px);
+        transform: rotate(45deg) translate(-6.5px, -6px);
     }
 }
 
