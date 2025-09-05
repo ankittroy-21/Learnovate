@@ -1,6 +1,6 @@
-# ☕ Java Core Concepts: Interview Questions
+#  Java Interview Questions Related to main ()
 
-### A comprehensive guide to Java fundamentals, from beginner to expert level. Perfect for technical interview preparation.
+### A comprehensive guide to Java main(), from beginner to expert level.
 
 ![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)
 ![Contributions Welcome](https://img.shields.io/badge/Contributions-welcome-brightgreen.svg)
