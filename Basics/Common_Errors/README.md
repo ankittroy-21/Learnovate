@@ -9,11 +9,11 @@ Welcome to the world of Java programming! This guide will help you navigate thro
 ---
 
 ## 📋 Table of Contents
-1. [Compilation Errors](#compilation-errors)
-2. [Runtime Errors](#runtime-errors)
-3. [Logical Errors](#logical-errors)
-4. [Debugging Toolkit](#debugging-toolkit)
-5. [Prevention Tips](#prevention-tips)
+1. [Compilation Errors](#-compilation-errors)
+2. [Runtime Errors](#-runtime-errors)
+3. [Logical Errors](#-logical-errors)
+4. [Debugging Toolkit](#-debugging-toolkit)
+5. [Prevention Tips](#-prevention-tips)
 
 ---
 
@@ -220,7 +220,7 @@ public class Example {
     }
 }
 ```
-## 🛠️ Debugging Toolkit
+## 🛠 Debugging Toolkit
 ### 1. Print Debugging
 ```java
 public class DebugExample {
