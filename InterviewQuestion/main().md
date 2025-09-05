@@ -9,7 +9,7 @@
 ---
 
 ## 🧭 Table of Contents
-* [Beginner-Friendly Questions 🔰](#beginner-friendly-questions-)
+* [Beginner-Friendly Questions 🔰](##Beginner-Friendly-Questions-)
 * [Intermediate-Level Questions 🧑‍💻](#intermediate-level-questions-)
 * [Expert-Level Questions 🚀](#expert-level-questions-)
 * [Contributing](#contributing)
@@ -17,7 +17,7 @@
 
 ---
 
-## Beginner-Friendly Questions 🔰
+## Beginner-Friendly-Questions 🔰
 
 ### Q1: Should a main() method be compulsorily declared in all java programs?
 >**A:** Yes. The main() method is the standard entry point for any standalone Java application. It's the method the Java Virtual Machine (JVM) looks for to begin executing your program.
