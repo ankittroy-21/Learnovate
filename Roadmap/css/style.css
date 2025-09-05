@@ -17,7 +17,7 @@ body {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background: rgba(224, 176, 255, 0.95); /* Semi-transparent version of your nav color */
+    background: #E0D6E6; /* Semi-transparent version of your nav color */
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     padding: 15px 5%;
@@ -29,13 +29,13 @@ body {
 
 .sticky-nav.scrolled {
     padding: 10px 5%;
-    background: rgba(224, 176, 255, 0.98);
+    background: #E0D6E6;
 }
 
 .logo {
     height: 75px; /* Set the logo height */
     width: auto; /* Maintain aspect ratio */
-    margin-right: 20px;
+   
 }
 
 
