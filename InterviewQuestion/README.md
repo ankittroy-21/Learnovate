@@ -9,9 +9,9 @@
 ---
 
 ## 🧭 Table of Contents
-* [Beginner-Friendly Questions 🔰](https://github.com/ankittroy-21/Learnovate/blob/main/InterviewQuestion/Beginner_Level_Questions/)
-* [Intermediate-Level Questions 🧑‍💻](https://github.com/ankittroy-21/Learnovate/blob/main/InterviewQuestion/Intermediate_Level_Questions/)
-* [Expert-Level Questions 🚀](https://github.com/ankittroy-21/Learnovate/blob/main/InterviewQuestion/Expert_Level_Questions/)
+* [Beginner-Friendly Questions 🔰](https://github.com/ankittroy-21/Learnovate/tree/main/InterviewQuestion/Beginner_Level_Questions/)
+* [Intermediate-Level Questions 🧑‍💻](https://github.com/ankittroy-21/Learnovate/tree/main/InterviewQuestion/Intermediate_Level_Questions/)
+* [Expert-Level Questions 🚀](https://github.com/ankittroy-21/Learnovate/tree/main/InterviewQuestion/Expert_Level_Questions/)
 * [Contributing](#contributing)
 * [License](#license)
 
