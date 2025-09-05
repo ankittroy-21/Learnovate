@@ -282,6 +282,9 @@ body {
     color: white;
 }
 
+html{
+    scroll-behavior: smooth;
+}
 /* --- NEW: Curriculum Section Styles --- */
 .curriculum-section {
     padding: 80px 5%;
