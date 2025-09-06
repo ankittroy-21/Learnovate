@@ -17,7 +17,7 @@ body {
     left: 0;
     width: 100%;
     z-index: 1000;
-    background: #E0D6E6; /* Semi-transparent version of your nav color */
+    background: #D4C8D6; /* Semi-transparent version of your nav color */
     backdrop-filter: blur(10px);
     box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
     padding: 15px 5%;
@@ -29,7 +29,7 @@ body {
 
 .sticky-nav.scrolled {
     padding: 10px 5%;
-    background: #E0D6E6;
+    background: #D4C8D6;
 }
 
 .logo {
