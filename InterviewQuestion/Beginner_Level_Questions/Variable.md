@@ -38,3 +38,24 @@
 >Whenever there is no reference referring to an object, it becomes garbage and the garbage collector de-allocates its memory.
 ---
 
+### Q11:What are the different types of segments on the RAM?
+> There are four segments: Code segment, Stack segment, Static segment, and Heap segment.
+
+---
+
+### Q12: Who allocates memory for the reference variables?
+> JVM.
+
+---
+
+### 13: Where is memory for reference variable allocated? Why?
+> Memory for reference variables is created in the stack segment inside the activation record. This allows efficient access to objects stored in the heap segment.
+---
+
+### Q14: When is memory for reference variable allocated?
+> When the control enters into the method.
+
+---
+### Q15: When is memory for a reference variable deallocated?
+> When the control leaves the method.
+---
