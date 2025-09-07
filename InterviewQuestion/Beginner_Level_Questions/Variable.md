@@ -59,3 +59,25 @@
 ### Q15: When is memory for a reference variable deallocated?
 > When the control leaves the method.
 ---
+### 16: Who allocates memory for the local variables?
+>JVM.
+---
+
+### Q17:  Where is memory for local variable allocated? Why?
+
+> A: In the stack segment, inside the activation record, for efficient scope-based memory management.
+---
+
+### Q18: When is memory for local variable allocated?
+>  When the control enters into the method.
+---
+
+### Q19: When is memory for a local variable deallocated?
+> When the control leaves the method.
+
+---
+
+### Q20: What does 4000 represent? Value or address?
+ It depends on the type of variable which is holding it. For primitive types, it's a value; for reference types, it's typically an address.
+
+---
