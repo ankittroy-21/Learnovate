@@ -36,3 +36,26 @@
 36. **Why is ASCII format forcefully stored as 8-bit format?**  
     **A:** Because minimum memory that can be allocated is 1 Byte i.e. 8 bits
 
+### Type Conversion & Operations
+37. **How can you convert double data type to float data type in Java?**  
+    **A:** i) By explicit typecasting: `float a = (float) 24.17;`  
+    ii) By adding suffix 'f': `float a = 24.17f;`
+
+38. **What is meant by rounding towards zero in integer division?**  
+    **A:** Truncation, i.e. fractional portion is truncated and only the integer portion is retained
+
+39. **What is meant by truncation?**  
+    **A:** Truncation is the process of eliminating the fractional part and retaining only the integer portion. It is also called as rounding towards zero
+
+40. **What is the difference between the prefix and postfix forms of the ++ operator?**  
+    **A:** Pre increment: increment first and then assign, post increment: first assign and then increment
+
+41. **Can a double value be cast to a byte?**  
+    **A:** Yes
+
+42. **Express double a = 123.45 in scientific notation?**  
+    **A:** double a = 1.2345E+2
+
+43. **What is the difference between declaring a variable and defining a variable?**  
+    **A:** `int a;` // declaring, `int a=100;` // defining
+
