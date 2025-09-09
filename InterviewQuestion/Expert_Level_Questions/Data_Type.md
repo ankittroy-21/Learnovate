@@ -42,3 +42,36 @@
 67. **Which Java operator is right to left associative?**  
     **A:** Assignment operator (=)
 
+### Memory & Storage Details
+68. **Why should data be stored in form of 0s and 1s in the memory?**  
+    **A:** Because every memory device can store only 0's and 1's
+
+69. **What is the role of formats in data types?**  
+    **A:** It is used to convert real world data in its original form into 0s and 1s so that it can be stored in the memory unit
+
+70. **How is a negative number stored in Byte data type?**  
+    **A:** Using 2's compliment base-2 format
+
+71. **How is a negative number stored in short data type?**  
+    **A:** Using 2's compliment base-2 format
+
+72. **How is a negative number stored in int data type?**  
+    **A:** Using 2's compliment base-2 format
+
+73. **How is a negative number stored in long data type?**  
+    **A:** Using 2's compliment base-2 format
+
+74. **How many bytes are allocated for boolean data type in Java?**  
+    **A:** It is OS dependent or JVM dependent
+
+75. **In what format is yes/no data stored in memory unit?**  
+    **A:** It is JVM dependent
+
+76. **Do we have unsigned integer format in Java?**  
+    **A:** Not up to java 1.7. However, from java 1.8 it is supported
+
+77. **Can we use the float data type to hold the precise values such as currency?**  
+    **A:** No. Rather, inbuilt class Currency is used
+
+78. **Can we use the double data type to hold the precise values such as currency?**  
+    **A:** No. Rather, inbuilt class Currency is used
