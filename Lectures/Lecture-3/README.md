@@ -3,18 +3,20 @@
 In Java, **data types define the kind of data a variable can store** — like numbers, text, or complex objects. Understanding data types is essential because Java is a **strongly typed language**, meaning every variable must have a declared type, and the compiler enforces type compatibility to prevent errors.
 
 ---
-
 ## Table of Contents
 1. [Why Data Types?](#why-data-types)
 2. [Primitive Data Types](#primitive-data-types)
 3. [Non-Primitive Data Types](#non-primitive-data-types)
 4. [Primitive vs Non-Primitive](#primitive-vs-non-primitive)
 5. [Memory: Stack vs Heap](#memory-stack-vs-heap)
+   - [Stack Memory](#stack-memory)
+   - [Heap Memory](#heap-memory)
+   - [Comparison Table](#comparison-table)
 6. [Type Casting](#type-casting)
+   - [Implicit Casting (Widening)](#implicit-casting-widening)
+   - [Explicit Casting (Narrowing)](#explicit-casting-narrowing)
 7. [Character Encoding: ASCII & Unicode](#character-encoding-ascii--unicode)
 8. [Example Program](#example-program)
-
----
 
 ## Why Data Types?
 
