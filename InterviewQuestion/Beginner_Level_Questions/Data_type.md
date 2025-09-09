@@ -63,3 +63,19 @@
 20. **What is the default value of char?**  
     **A:** '\u0000' i.e. blank character
 
+### Basic Concepts
+21. **What is a variable?**  
+    **A:** It is a reserved memory location into which a value can be stored
+
+22. **What is a literal?**  
+    **A:** Literal is a fixed value which is assigned to a variable
+
+23. **What is the difference between char literal and string literal?**  
+    **A:** Character literal is data which is enclosed within single quotes whereas String literal is data which is enclosed within double quotes
+
+24. **What is meant by "Java is a strongly typed language"?**  
+    **A:** Every variable in java must have an associated data type and also a value which is compatible with the data type
+
+25. **What are the types of variables available in Java?**  
+    **A:** Local variables, instance variables, reference variables and static variables
+
