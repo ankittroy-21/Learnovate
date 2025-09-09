@@ -98,3 +98,13 @@
 85. **How is still picture type data handled in Java?**  
     **A:** Using in built classes
 
+### Identification & Validation
+86. **Which special characters may be used as the first character of an identifier?**  
+    **A:** _ and $
+
+87. **Which characters may be used as the second character of an identifier, but not as the first character of an identifier?**  
+    **A:** Digits cannot be used as the first character. Eg. `16cmp=25;` and `temp6=35;` are valid whereas, `6temp=25;` is invalid
+
+88. **Identify valid and invalid literals?**  
+    **A:** Valid: `long creditCardNumber = 1234_5678_9012_3456L;`, `long socialSecurityNumber = 999_99_9999L;`, `float pi = 3.14_15F;`, `long hexBytes = 0xFF_EC_DE_5E;`, `long hexWords = 0xCAFE_BABE;`, `long maxLong = 0x7fff_ffff_ffff_ffffL;`, `byte nybbles = 0b0010_0101;`, `long bytes = 0b11010010_01101001_10010100_10010010;`, `int x1 = 5_2;`, `int x3 = 5_______2;`, `int x6 = 0x5_2;`  
+    Invalid: `float pi1 = 3._1415F;`, `float pi2 = 3._1415F;`, `long socialSecurityNumber1 = 999_99_9999_L;`, `int x2 = 52_;`, `int x4 = 0_x52;`, `int x5 = 0x_52;`, `int x7 = 0x52_;`
