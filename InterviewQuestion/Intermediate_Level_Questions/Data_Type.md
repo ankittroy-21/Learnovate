@@ -59,3 +59,37 @@
 43. **What is the difference between declaring a variable and defining a variable?**  
     **A:** `int a;` // declaring, `int a=100;` // defining
 
+### Special Topics
+44. **Is zero a positive number or negative number in programming? Why?**  
+    **A:** Zero is a positive number, because the most significant bit in the positive number is zero
+
+45. **Are true and false keywords?**  
+    **A:** true and false are reserved words
+
+46. **What does a prefix 0 indicate in a literal?**  
+    **A:** It indicates that the number is an Octal
+
+47. **What does a prefix 0x indicate in a literal?**  
+    **A:** It indicates that the number is Hexadecimal
+
+48. **How do we display a \ in Java?**  
+    **A:** `System.out.println("\\");`
+
+49. **How do we display " in Java?**  
+    **A:** `System.out.println("\"");`
+
+50. **How do we display ' in Java?**  
+    **A:** `System.out.println("\'");`
+
+51. **Can we use underscore in a literal?**  
+    **A:** Yes
+
+52. **What are the rules associated with the usage of underscore in a literal?**  
+    **A:** Underscore can only be used in between the literal any number of times. It cannot be used: before/after literal, before/after prefix, before/after suffix, or before/after decimal points
+
+53. **Can we create binary literals in Java?**  
+    **A:** Yes. Using a prefix `0b`
+
+54. **How is a binary literal created in Java?**  
+    **A:** Using the prefix `0b`
+
