@@ -75,3 +75,26 @@
 
 78. **Can we use the double data type to hold the precise values such as currency?**  
     **A:** No. Rather, inbuilt class Currency is used
+
+### Real-world Data Handling
+79. **What are the different types of data in real world?**  
+    **A:** Character type data, integer type data, real number type data, yes/no type data, still picture type data, audio and video type data
+
+80. **In what format is still picture data stored in memory unit?**  
+    **A:** .jpeg format and .gif format
+
+81. **In what format is audio data stored in memory unit?**  
+    **A:** .mp3 format
+
+82. **In what format is video data stored in memory unit?**  
+    **A:** .mp4 format and .avi format
+
+83. **How is audio type data handled in Java?**  
+    **A:** Using in built classes
+
+84. **How is video type data handled in Java?**  
+    **A:** Using in built classes
+
+85. **How is still picture type data handled in Java?**  
+    **A:** Using in built classes
+
