@@ -16,7 +16,7 @@ In Java, **data types define the kind of data a variable can store** — like nu
    - [Implicit Casting (Widening)](#implicit-casting-widening)
    - [Explicit Casting (Narrowing)](#explicit-casting-narrowing)
 7. [Character Encoding: ASCII & Unicode](#character-encoding-ascii--unicode)
-8. [Example Program](#example-program)
+8. [Example Program](#example)
 
 ## Why Data Types?
 
@@ -78,6 +78,7 @@ Examples:
 ```java
 String name = "Ankit";
 int[] marks = {90, 80, 85};
+```
 
 # Java Data Types Guide
 
@@ -104,6 +105,8 @@ int[] marks = {90, 80, 85};
 - Accessed via references from the stack
 - Managed by Garbage Collector
 
+## Comparison Table
+
 | Feature         | Stack Memory                | Heap Memory                    |
 |-----------------|-----------------------------|--------------------------------|
 | **Usage**       | Primitives, method frames   | Objects, arrays, strings       |
@@ -119,6 +122,7 @@ Automatically done by the compiler when converting a smaller type to a larger ty
 ```java
 byte a = 45;
 double b = a; //  Auto-conversion
+```
 
 # Java Data Types Guide
 
@@ -136,6 +140,7 @@ Type casting is a process of converting one type of data to another.
 ```java
 byte a = 45;
 double b = a; // Auto-conversion (1 byte → 8 bytes)
+```
 
 # Java Type Casting and Memory Management
 
@@ -153,25 +158,8 @@ byte b = (byte) a; // ✅ Explicit cast → b = 45 (0.5 lost)
 
 a (8 bytes) → b (1 byte)
 [45.5] → [45] (precision loss: 0.5 discarded)
-
-# Memory: Stack vs Heap
-
-## Stack Memory
-- Stores primitive values and method calls
-- Fast access, LIFO structure
-- Automatically freed when method exits
-
-## Heap Memory
-- Stores objects and non-primitive data
-- Accessed via references from the stack
-- Managed by Garbage Collector
-
-| Feature         | Stack Memory                | Heap Memory                    |
-|-----------------|-----------------------------|--------------------------------|
-| **Usage**       | Primitives, method frames   | Objects, arrays, strings       |
-| **Speed**       | Fast                        | Slower                         |
-| **Management**  | Automatic                   | Garbage Collected              |
-| **Example**     | `int a = 10;`               | `String s = new String();`     |
+```
+---
 
 # Character Encoding: ASCII & Unicode
 
@@ -183,9 +171,10 @@ Java uses Unicode for `char` type.
 **Example:**
 ```java
 char ch = 'A'; // Stored as Unicode value
+```
 
-
-**Example:**
+## Example:
+```java
 public class DataTypeDemo {
     public static void main(String[] args) {
         // Primitive types
@@ -206,3 +195,4 @@ public class DataTypeDemo {
         System.out.println("Marks: " + marks[0] + ", " + marks[1] + ", " + marks[2]);
     }
 }
+```
