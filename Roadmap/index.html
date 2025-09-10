@@ -1,20 +1,24 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Coding Playground</title>
+
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
-    
+
     <link rel="stylesheet" href="css/style.css">
     <link rel="stylesheet" href="css/responsive.css">
 </head>
+
 <body>
+
     <nav class="sticky-nav" id="stickyNav">
         <div class="nav-left">
-            <img src="assets/logo.PNG" alt="Logo" class="logo">
+            <img src="assets/logo2.PNG" alt="Logo" class="logo">
         </div>
 
         <ul class="nav-links" id="navLinks">
@@ -28,7 +32,6 @@
         </ul>
 
         <div class="nav-right">
-            
             <div class="nav-right-links">
                 <button class="enroll-btn">Join Us</button>
             </div>
@@ -41,15 +44,15 @@
         </div>
     </nav>
     <nav class="language-nav">
-       <div class="marquee-container">
-    <div class="marquee-text">
-        🚀 Welcome to XEQT Community! | Beginner-Friendly Java Roadmap: From Scratch to Advanced 🚀 | Practice Questions & Examples Included! | Join XEQT and Master Java Today! 💻
-    </div>
-</div>
+        <div class="marquee-container">
+            <div class="marquee-text">
+                🚀 Welcome to XEQT Community! | Beginner-Friendly Java Roadmap: From Scratch to Advanced 🚀 | Practice Questions & Examples Included! | Join XEQT and Master Java Today! 💻
+            </div>
+        </div>
     </nav>
     <section class="welcome-section">
         <main class="hero-section">
-         <button class="start-btn">JAVA ROADMAP</button>
+            <a href ="#curriculum" ><button class="start-btn">JAVA ROADMAP</button></a>
         </main>
     </section>
     <section class="curriculum-section">
@@ -57,7 +60,7 @@
         <h1 class="section-title">What will you <span class="highlight" id="changing-text">learn?</span></h1>
         <p class="section-description">The most beginner-friendly curriculum provided by XEQT community.</p>
 
-        <div class="curriculum-container">
+        <div class="curriculum-container" id="curriculum">
             <div class="timeline">
                 <div class="timeline-item">
                     <span class="week-tag">WEEK 0</span>
@@ -83,7 +86,7 @@
                     <div class="module-content">
                         <div class="lesson-item">
                             <div class="lesson-info">
-                               <i class="fa-solid fa-0">.</i>
+                                <i class="fa-solid fa-0">.</i>
                                 <div class="lesson-text">
                                     <span>NOTE LESSON</span>
                                     <p>Intro to JAVA</p>
@@ -106,16 +109,17 @@
             </div>
         </div>
     </section>
-
     <section class="cta-section">
-        <div class="cta-container">
-            <div class="cta-content">
-                <h2>Be a part of a new era in programming.<br>Be a XEQT Engineer!</h2>
-                <button class="cta-btn">JOIN Now</button>
-            </div>
-        </div>
-    </section>
+    <div class="cta-container">
+        <canvas id="particle-canvas"></canvas>
 
+        <div class="cta-content">
+            <h2>Be a part of a new era in programming.<br>Be a XEQT Engineer!</h2>
+            <button class="cta-btn">JOIN Now</button>
+        </div>
+        
+        </div>
+</section>
     <footer class="site-footer">
         <div class="footer-container">
             <div class="footer-top">
@@ -152,8 +156,7 @@
         </div>
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
-    
     <script src="js/script.js"></script>
-</body>
-</html>
+    </body>
 
+</html>

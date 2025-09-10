@@ -1,140 +1,198 @@
-# Java Data Types
-In Java, **data types define the kind of data a variable can store** — like numbers, text, or
-complex objects.
-## Java Data Types
+# Java Data Types – Complete Guide
 
-* **Primitive Types**
-* **Non-Primitive Types**
+In Java, **data types define the kind of data a variable can store** — like numbers, text, or complex objects. Understanding data types is essential because Java is a **strongly typed language**, meaning every variable must have a declared type, and the compiler enforces type compatibility to prevent errors.
 
-## 1. Primitive Data Types
-These are basic **built-in types** in Java. They store **simple values**, not objects. Java has 8
-primitive types, divided into categories:
+---
+## Table of Contents
+1. [Why Data Types?](#why-data-types)
+2. [Primitive Data Types](#primitive-data-types)
+3. [Non-Primitive Data Types](#non-primitive-data-types)
+4. [Primitive vs Non-Primitive](#primitive-vs-non-primitive)
+5. [Memory: Stack vs Heap](#memory-stack-vs-heap)
+   - [Stack Memory](#stack-memory)
+   - [Heap Memory](#heap-memory)
+   - [Comparison Table](#comparison-table)
+6. [Type Casting](#type-casting)
+   - [Implicit Casting (Widening)](#implicit-casting-widening)
+   - [Explicit Casting (Narrowing)](#explicit-casting-narrowing)
+7. [Character Encoding: ASCII & Unicode](#character-encoding-ascii--unicode)
+8. [Example Program](#example)
 
-### A. Numeric Types
+## Why Data Types?
 
-| Type | Size | Example | Purpose |
-|---|---|---|---|
-| `byte` | 1 **byte** | byte age = 25; | Small integers |
-| `short` | 2 **bytes** | short year = 2025; | Medium-size integers |
-| `int` | 4 **bytes** | int salary = 50000; | Default for integers |
-| `long` | 8 **bytes** | long population = 1380000000L; | Very large integers |
+Data types are required so that you (and the compiler) know what "kind" of data a variable can hold. This helps catch errors at compile time rather than at runtime.
 
-### B. Floating-point Types
-| Type | Size | Example | Purpose |
-|---|---|---|---|
-| `float` | 4 **bytes** | float temp = 36.6f; | Decimal numbers (less precision) |
-| `double` |  8**bytes** | double pi = 3.14159; | Decimal numbers (more precision) |
+For example:
+- In Java: `int age = 25;` → compiler knows `age` can only hold integers.
+- In JavaScript: `var age = 25;` → `age` can later become a string, leading to potential runtime errors.
+
+Data types provide **flexibility**, **safety**, and **clarity** in programming.
+
+---
+
+## Primitive Data Types
+
+These are basic **built-in types** in Java. They store **simple values**, not objects. Java has 8 primitive types:
+
+### A. Integer Types
+
+| Type   | Size      | Range                                                       | Example                  |
+|--------|-----------|-------------------------------------------------------------|--------------------------|
+| `byte` | 1 byte    | -128 to +127                                                | `byte age = 25;`         |
+| `short`| 2 bytes   | -32,768 to +32,767                                          | `short year = 2025;`     |
+| `int`  | 4 bytes   | -2,147,483,648 to +2,147,483,647                            | `int salary = 50000;`    |
+| `long` | 8 bytes   | -9,223,372,036,854,775,808 to +9,223,372,036,854,775,807    | `long pop = 1380000000L;`|
+
+> 💡 Use the suffix `L` for `long` literals.
+
+### B. Floating-Point Types
+
+| Type     | Size  | Precision       | Example                |
+|----------|-------|-----------------|------------------------|
+| `float`  | 4 bytes | 6-7 digits      | `float temp = 36.6f;`  |
+| `double` | 8 bytes | 15-16 digits    | `double pi = 3.14159;` |
+
+> 💡 Use the suffix `f` for `float` literals.
 
 ### C. Other Types
-| Type | Size | Example | Purpose |
-|---|---|---|---|
-| `char` | 2 **bytes** | char grade = 'A'; | Single characters |
-| `boolean` | 1 **bit** | boolean isOn = true; | True/False values |
 
-## Key Points about Primitive Types:
-- Stored in heap memory
-- Can be null
-- Can call methods (e.g., name.length(), arr.length)
-- More flexible, used in OOP
+| Type      | Size   | Example              |
+|-----------|--------|----------------------|
+| `char`    | 2 bytes| `char grade = 'A';`  |
+| `boolean` | 1 bit  | `boolean isOn = true;`|
 
-***
+> 🔍 `boolean` size is JVM-dependent.
 
-### Primitive vs Non-Primitive – At a Glance
+---
 
-| Feature | Primitive | Non-Primitive |
-| :--- | :--- | :--- |
-| `Type` | Built-in | Custom or library-defined |
-| `Value` | Stores actual value | Stores memory reference |
-| `Methods` | No | Yes (e.g., length(), equals()) |
-| `Memory` | Stack | Heap |
-| `Nullable?` | No | Yes (null allowed) |
-| `Example` | int x = 5; | String s = "Hello"; |
+## Non-Primitive Data Types
 
-### Quick Demo Example:
+These are also called **reference types**. They refer to objects and are stored in the **heap memory**.
+
+Examples:
+- `String`
+- `Array`
+- `Class` objects
+- `Interface`
 
 ```java
-public class DataTypeDemo { // Keep class name exact same as your file name
+String name = "Ankit";
+int[] marks = {90, 80, 85};
+```
+
+# Java Data Types Guide
+
+## Primitive vs Non-Primitive
+
+| Feature           | Primitive                          | Non-Primitive                     |
+|-------------------|------------------------------------|-----------------------------------|
+| **Type**          | Built-in                           | User-defined or library-defined   |
+| **Storage**       | Stack memory                       | Heap memory (via reference)       |
+| **Value**         | Actual value                       | Reference (address) to object     |
+| **Nullable**      | No                                 | Yes                               |
+| **Methods**       | No methods                         | Can have methods                  |
+| **Example**       | `int x = 5;`                       | `String s = "Hello";`             |
+
+## Memory: Stack vs Heap
+
+### Stack Memory
+- Stores primitive values and method calls
+- Fast access, LIFO structure
+- Automatically freed when method exits
+
+### Heap Memory
+- Stores objects and non-primitive data
+- Accessed via references from the stack
+- Managed by Garbage Collector
+
+## Comparison Table
+
+| Feature         | Stack Memory                | Heap Memory                    |
+|-----------------|-----------------------------|--------------------------------|
+| **Usage**       | Primitives, method frames   | Objects, arrays, strings       |
+| **Speed**       | Fast                        | Slower                         |
+| **Management**  | Automatic                   | Garbage Collected              |
+| **Example**     | `int a = 10;`               | `String s = new String();`     |
+
+## Type Casting
+
+### Implicit Casting (Widening)
+Automatically done by the compiler when converting a smaller type to a larger type.
+
+```java
+byte a = 45;
+double b = a; //  Auto-conversion
+```
+
+# Java Data Types Guide
+
+## Type Casting in Java
+
+Type casting is a process of converting one type of data to another.
+
+### Implicit Casting (Widening)
+- Automatically done by the Java compiler
+- Converts smaller types to larger types
+- No loss of precision
+- Conversion order: byte → short → char → int → long → float → double
+
+**Example:**
+```java
+byte a = 45;
+double b = a; // Auto-conversion (1 byte → 8 bytes)
+```
+
+# Java Type Casting and Memory Management
+
+## Explicit Casting (Narrowing)
+
+- Must be done manually by the programmer
+- Converts larger types to smaller types
+- May lead to loss of precision
+- Requires explicit type specification in parentheses
+
+**Example:**
+```java
+double a = 45.5;
+byte b = (byte) a; // ✅ Explicit cast → b = 45 (0.5 lost)
+
+a (8 bytes) → b (1 byte)
+[45.5] → [45] (precision loss: 0.5 discarded)
+```
+---
+
+# Character Encoding: ASCII & Unicode
+
+- **ASCII**: 7-bit code, 128 symbols (English only)
+- **Unicode**: 16-bit code, 65,536 symbols (supports worldwide languages)
+
+Java uses Unicode for `char` type.
+
+**Example:**
+```java
+char ch = 'A'; // Stored as Unicode value
+```
+
+## Example:
+```java
+public class DataTypeDemo {
     public static void main(String[] args) {
-        int age = 20;                  // Primitive
-        String name = "Ankit";       // Non-Primitive
-        int[] marks = {90, 80, 85};    // Non-Primitive (Array)
-        
+        // Primitive types
+        int age = 20;
+        double score = 89.5;
+        char grade = 'A';
+        boolean isPassed = true;
+
+        // Non-primitive types
+        String name = "Ankit";
+        int[] marks = {90, 85, 88};
+
         System.out.println("Name: " + name);
         System.out.println("Age: " + age);
-        System.out.println("First Mark: " + marks[0]);
+        System.out.println("Score: " + score);
+        System.out.println("Grade: " + grade);
+        System.out.println("Passed: " + isPassed);
+        System.out.println("Marks: " + marks[0] + ", " + marks[1] + ", " + marks[2]);
     }
 }
 ```
-***
-
-## Difference Between Primitive and Non-Primitive Data Types Based on Memory
-
-| Feature | Primitive Data Types | Non-Primitive Data Types |
-| :--- | :--- | :--- |
-| `Memory Location` | Stored in the stack memory | Reference (address) is stored in stack, but the actual object is stored in heap memory |
-| `What Is Stored` | The actual value (like 5, true, A) is directly stored | A reference (memory address) to the object in the heap |
-| `Size & Simplicity` | Small and fixed in size (e.g., 4 bytes for int) → lightweight | Size varies depending on object complexity → heavier |
-| `Access Speed` | Faster access because values are stored directly in stack | Slightly slower since reference must point to heap to access actual data |
-| `Garbage Collection` | Not applicable (auto-managed by the system) | Managed by Garbage Collector in JVM to free unused heap memory |
-| `Example` | int a = 10; → a stores the value 10 directly | String s = "Hello"; → s stores a reference to "Hello" stored in heap |
-
-### Why It Matters:
-
-- Primitive types are great for simple values and high-speed operations.
-- Non-primitive types are used when you need to manage collections, complex data, or objects.
-
-***
-
-## Difference Between Stack and Heap Memory in Java
-
-Java uses two major memory areas during program execution:
-
-- Stack ← Fast, organised, method-level
-- Heap ← Slower, dynamic, object-level
-
-### What is Stack Memory?
-
-Characteristics:
-
-- Stores method calls, local variables, and primitive data types
-- Works in LIFO (Last-In, First-Out) order
-- Memory is automatically allocated and deallocated
-- Very fast because of the fixed-size and simple structure
-
-Example:
-```java
-int a = 10;
-```
-- The variable a and its value 10 are stored directly in the stack.
-
-### What is Heap Memory?
-
-Characteristics:
-
-- Stores all objects and non-primitive types (String, Array, custom classes)
-- Accessed via references stored in the stack
-- Managed by the JVM Garbage Collector
-- Slower than stack because memory allocation is more complex
-
-Example:
-```java
-String name = "Ankit";
-```
-- The reference name is stored in the stack, and the actual "Vinayak" string object is stored in the heap.
-
-### Stack vs Heap – Tabular Comparison
-
-| Feature | Stack Memory | Heap Memory |
-| :--- | :--- | :--- |
-| `Used For` | Method calls, local variables, primitives | Objects, arrays, strings, class instances |
-| `Memory Allocation` | Automatic (at compile/runtime) | Manual/automatic (dynamic, at runtime) |
-| `Access Speed` | Faster | Slower |
-| `Lifetime` | Limited to method execution | Until object is no longer referenced |
-| `Managed By` | JVM directly | JVM + Garbage Collector |
-| `Thread Safety` | Thread-safe (each thread has its own stack) | Not thread-safe by default (shared among threads) |
-| `Example` | int x = 5; | Student s = new Student() |
-
-## Common Interview Analogy:
-**Stack** is like a plate rack (last plate placed is the first taken out).
-
-**Heap** is like a big shelf – you store things randomly and need a label (reference) to find them.
