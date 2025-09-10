@@ -57,12 +57,25 @@ body {
     background-color: #81599F; /* A slightly lighter dark blue */
     padding: 10px 0;
 }
-
-.language-nav a {
-    color: #ffffff;
-    text-decoration: none;
-    padding: 0 15px;
+.language-nav a::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 0%;
+    height: 2px;
+    background-color: #ffffff;
+    transition: width 0.3s ease;
+    transform: translateX(-50%);
+    transform-origin: center;
 }
+
+.language-nav a:hover::after {
+    width: 100%;
+}
+
+
+
 
 /* --- Hero Section (Main Content) --- */
 .hero-section {
