@@ -330,6 +330,40 @@ public class Pattern9 {
         }
     }
 }
+
+```
+### Efficient Way to do the above pattern
+```java
+public class Pattern9 {
+    public static void main(String[] args) {
+        int n = 5; // height of half diamond
+
+        for (int i = 0; i < 2 * n - 1; i++) {
+            int spaces;
+            int stars;
+
+            if (i < n) { // upper half including middle row
+                spaces = n - i - 1;
+                stars = 2 * i + 1;
+            } else {     // lower half
+                spaces = i - n + 1;
+                stars = 2 * (2 * n - i - 1) - 1;
+            }
+
+            // print spaces
+            for (int j = 0; j < spaces; j++) {
+                System.out.print(" ");
+            }
+
+            // print stars
+            for (int j = 0; j < stars; j++) {
+                System.out.print("*");
+            }
+
+            System.out.println();
+        }
+    }
+}
 ```
 ### Explanation:
 
