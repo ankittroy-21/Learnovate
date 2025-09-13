@@ -376,3 +376,69 @@ public class Pattern9 {
 - Creates a perfect diamond shape
 
 - Uses the same logic as Patterns 7 and 8 combined
+
+
+## Pattern 10: Diamond Star Pattern
+```text
+*
+*  *
+*  *  *
+*  *  *  *
+*  *  *  *  *
+*  *  *  *
+*  *  *
+*  *
+*
+```
+
+```java
+for (int i = 0; i <= 2*5-1; i++) {
+    int stars = i;
+    if (i > 5) stars = 2*5 - i;
+    for (int j = 0; j < stars; j++) {
+        System.out.print(" * ");
+    }
+    System.out.println("");
+}
+```
+### Explanation:
+- The outer loop runs from i = 0 to i = 9 (2*5-1 = 9)
+
+- For the first half (i ≤ 5), the number of stars equals i
+
+- For the second half (i > 5), the number of stars decreases as 2*5 - i
+
+- This creates a diamond shape with increasing stars up to the middle row, then decreasing
+
+## Pattern 11: Binary Triangle Pattern
+```text
+0 
+1 0
+0 1 0
+1 0 1 0
+1 0 1 0 1
+```
+```java
+int start = 1;
+for (int i = 0; i < 5; i++) {
+    if (i % 2 == 0) start = 1;
+    else start = 0;
+    for (int j = 0; j < i; j++) {
+        System.out.print(start + " ");
+        start = 1 - start; // Toggles between 0 and 1
+    }
+    System.out.println("");
+}
+```
+### Explanation:
+- The outer loop controls the number of rows (5 rows)
+
+- For even rows (i % 2 == 0), we start with 1
+
+- For odd rows, we start with 0
+
+- The inner loop toggles between 0 and 1 using start = 1 - start
+
+- This creates an alternating binary pattern
+
+
