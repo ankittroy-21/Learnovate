@@ -23,3 +23,17 @@
 ### Q5: What are the different types of arrays in Java?
 **A:** 1-D, 2-D, 3-D and Multi-Dimensional Regular and jagged array.
 
+## Q6: Design an array for marks of 100 students
+**A:** int a[] = new int[100];
+
+## Q7: Design an array for marks of students in 5 classes each with 100 students
+**A:** int a[][] = new int[5][100];
+
+## Q8: Design an array for marks of students in 3 schools each with 5 classes each with 100 students
+**A:** int a[][][] = new int[3][5][100];
+
+## Q9: What is the advantage of jagged array data structure?
+**A:**  In real life, data is often irregular. Jagged arrays provide a solution for storing irregular data structures.
+
+## Q9:What are the exceptions associated with arrays?
+**A:** ArrayIndexOutOfBoundsException, NegativeArraySizeException, and ArrayStoreException.
