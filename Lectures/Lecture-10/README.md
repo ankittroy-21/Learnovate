@@ -175,3 +175,101 @@ for (int i = 0; i < 1000; i++) {
 }
 String result = sb.toString();
 ```
+## Java Programs used on Strings
+
+```java
+public class Stringss {
+    public static void main(String[] args) {
+        // 1. Length of a string 
+        String str1 = "Java";
+        System.out.println("Length of \"" + str1 + "\" → " + str1.length());
+
+        // 2. Concatenation
+        String str2 = "Hello";
+        String str3 = "Java";
+        System.out.println(str2 + " + " + str3 + " = " + (str2 + str3));
+        System.out.println("Using concat() " + str2 + " + " + str3 + " = " + str2.concat(str3));
+        
+        // 3. Character at Index
+        System.out.println(str2 + " having charAt(2) with value " + str1.charAt(2));
+        
+        // 4. Substring Extraction
+        String str4 = "Programming";
+        System.out.println(str4 + " Using .substring(1,4) will give " + str4.substring(1,4));
+
+        // 5. UpperCase Conversion
+        String str5 = "java";
+        System.out.println(str5 + " Using .toUpperCase() will give " + str5.toUpperCase());
+        
+        // 6. LowerCase Conversion
+        String str6 = "JAVA";
+        System.out.println(str6 + " Using .toLowerCase() will give " + str6.toLowerCase());
+
+        // 7. Remove Spaces
+        String str7 = " Welcome to Java   ";
+        System.out.println("Before trim: '" + str7 + "'");
+        System.out.println("After trim: '" + str7.trim() + "'");
+
+        // 8. Replace Characters
+        System.out.println("JAVA.replace('A','O') will give: " + "JAVA".replace('A', 'O'));
+
+        // 9. Equals Comparison
+        System.out.println("Comparing " + str2 + " with " + str3 + " will give " + str2.equals(str3));
+
+        // 10. Ignore Case Equality
+        System.out.println("Using .equalsIgnoreCase for " + str5 + " with " + str6 + " will give " + str5.equalsIgnoreCase(str6));
+
+        // StringBuilder Examples
+        StringBuilder sb = new StringBuilder("Hello");
+        sb.append(" World");
+        System.out.println("After append: " + sb);
+        sb.reverse();
+        System.out.println("After reverse: " + sb);
+    }
+}
+```
+
+## Output will be as
+
+```text
+Length of "Java" → 4
+```
+```text
+Hello + Java = HelloJava
+```
+```text
+Using concat() Hello + Java = HelloJava
+```
+```text
+Hello having charAt(2) with value v
+```
+```text
+Programming Using .substring(1,4) will give rog
+```
+```text
+java Using .toUpperCase() will give JAVA
+```
+```text
+JAVA Using .toLowerCase() will give java
+```
+```text
+Before trim: ' Welcome to Java   '
+```
+```text
+After trim: 'Welcome to Java'
+```
+```text
+JAVA.replace('A','O') will give: JOVO
+```
+```text
+Comparing Hello with Java will give false
+```
+```text
+Using .equalsIgnoreCase for java with JAVA will give true
+```
+```text
+After append: Hello World
+```
+```text
+After reverse: dlroW olleH
+```
