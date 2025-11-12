@@ -20,6 +20,39 @@ It is designed to **help students practice, revise, and strengthen problem-solvi
 
 [![Java Roadmap](https://img.shields.io/badge/Java%20Roadmap-Live%20Demo-1E90FF?style=for-the-badge&logo=java&logoColor=white)](https://ankittroy-21.github.io/Learnovate/Roadmap/index.html)
 
+### Deploy to Render
+> Host Your Own Instance with One Click! 🚀
+
+[![Deploy to Render](https://render.com/images/deploy-to-render-button.svg)](https://render.com/deploy?repo=https://github.com/ankittroy-21/Learnovate)
+
+**Deployment Instructions:**
+1. Click the "Deploy to Render" button above
+2. Sign in to your Render account (or create a free one)
+3. Fill in the required details:
+   - **Name**: Choose a name for your service (e.g., `learnovate-roadmap`)
+   - **Branch**: `main` (default)
+4. Click "Create Web Service"
+5. Wait for the deployment to complete (2-3 minutes)
+6. Your roadmap will be live at: `https://your-service-name.onrender.com`
+
+**Features:**
+- ✅ Automatic HTTPS enabled
+- ✅ Keep-alive mechanism prevents idle shutdown
+- ✅ Free tier available (perfect for learning projects)
+- ✅ Automatic deployments on every GitHub push
+
+**Manual Deployment Steps:**
+If you prefer manual setup:
+1. Fork this repository
+2. Go to [Render Dashboard](https://dashboard.render.com/)
+3. Click "New +" → "Web Service"
+4. Connect your GitHub repository
+5. Configure:
+   - **Root Directory**: `Roadmap`
+   - **Build Command**: `npm install`
+   - **Start Command**: `npm start`
+6. Deploy! 🎉
+
 
 ---
 
