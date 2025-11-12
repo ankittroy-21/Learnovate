@@ -4,7 +4,21 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Coding Playground</title>
+    <title>Java Roadmap - Learnovate | XEQT Community</title>
+    <meta name="description" content="Complete beginner-friendly Java roadmap from scratch to advanced. Learn Java with practice questions, examples, and expert guidance from XEQT Community.">
+    <meta name="keywords" content="Java, Java Tutorial, Java Roadmap, Learn Java, Programming, XEQT, Learnovate, BBD University">
+    <meta name="author" content="XEQT Community">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Java Roadmap - Learnovate | XEQT Community">
+    <meta property="og:description" content="Complete beginner-friendly Java roadmap from scratch to advanced. Learn Java with practice questions and examples.">
+    <meta property="og:image" content="https://learnovate.onrender.com/assets/logo2.PNG">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="Java Roadmap - Learnovate">
+    <meta name="twitter:description" content="Complete beginner-friendly Java roadmap from scratch to advanced.">
 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
@@ -92,7 +106,7 @@
                                     <p>Intro to JAVA</p>
                                 </div>
                             </div>
-                            <a href="java-intro.html" target="_blank" class="watch-btn">The Crux <i class="fas fa-arrow-right"></i></a>
+                            <a href="java-intro.html" class="watch-btn">The Crux <i class="fas fa-arrow-right"></i></a>
                         </div>
                         <div class="lesson-item">
                             <div class="lesson-info">
@@ -102,7 +116,7 @@
                                     <p>THE SECRETS OF JAVA FOR BEGINNER</p>
                                 </div>
                             </div>
-                            <a href="java-secrets.html" target="_blank" class="watch-btn">The Crux <i class="fas fa-arrow-right"></i></a>
+                            <a href="java-secrets.html" class="watch-btn">The Crux <i class="fas fa-arrow-right"></i></a>
                         </div>
                     </div>
                 </div>
@@ -128,9 +142,9 @@
                     <p>XEQT COMMUNITY © 2025</p>
                 </div>
                 <div class="footer-links">
-                    <a href="#">Terms & Conditions</a>
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Contact us</a>
+                    <a href="#curriculum">Curriculum</a>
+                    <a href="mailto:xeqtcommunity@gmail.com">Contact us</a>
+                    <a href="https://github.com/ankittroy-21/Learnovate" target="_blank">GitHub</a>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -157,6 +171,17 @@
     </footer>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
     <script src="js/script.js"></script>
+    
+    <!-- Keep-alive script to prevent Render idle shutdown -->
+    <script>
+        // Ping the server every 5 minutes to keep it alive
+        setInterval(function() {
+            fetch('/ping')
+                .then(response => response.json())
+                .then(data => console.log('Keep-alive ping:', data.timestamp))
+                .catch(error => console.log('Ping failed:', error));
+        }, 5 * 60 * 1000); // Every 5 minutes
+    </script>
     </body>
 
 </html>
