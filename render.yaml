@@ -1,0 +1,12 @@
+services:
+  - type: web
+    name: learnovate-roadmap
+    env: node
+    region: oregon
+    plan: free
+    buildCommand: cd Roadmap && npm install
+    startCommand: cd Roadmap && npm start
+    healthCheckPath: /health
+    envVars:
+      - key: NODE_ENV
+        value: production
