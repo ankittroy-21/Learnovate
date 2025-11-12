@@ -1,0 +1,25 @@
+{
+  "name": "learnovate-roadmap",
+  "version": "1.0.0",
+  "description": "Java Learning Roadmap - Static website hosted on Render",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "keywords": [
+    "java",
+    "learning",
+    "roadmap",
+    "education",
+    "programming"
+  ],
+  "author": "XEQT Community",
+  "license": "MIT",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {
+    "express": "^4.18.2"
+  }
+}
