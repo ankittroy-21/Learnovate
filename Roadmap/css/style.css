@@ -753,7 +753,7 @@ html{
 }
 
 .content-page a {
-    color: #f2442d;
+    color: white;
     text-decoration: none;
     font-weight: 600;
     transition: color 0.3s;
