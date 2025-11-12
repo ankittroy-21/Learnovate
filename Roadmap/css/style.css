@@ -760,8 +760,8 @@ html{
 }
 
 .content-page a:hover {
-    color: #ef5742;
-    text-decoration: underline;
+    color: #e3e1e1;
+    text-decoration: none;
 }
 
 .content-page .solution-link {
