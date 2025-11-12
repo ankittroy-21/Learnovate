@@ -18,7 +18,7 @@ It is designed to **help students practice, revise, and strengthen problem-solvi
 > Click Below To View 🌐
 
 
-[![Java Roadmap](https://img.shields.io/badge/Java%20Roadmap-Live%20Demo-1E90FF?style=for-the-badge&logo=java&logoColor=white)](https://ankittroy-21.github.io/Learnovate/Roadmap/index.html)
+[![Java Roadmap](https://img.shields.io/badge/Java%20Roadmap-Live%20Preview-1E90FF?style=for-the-badge&logo=java&logoColor=white)](https://learnovate-roadmap.onrender.com)
 
 ### Deploy to Render
 > Host Your Own Instance with One Click! 🚀
