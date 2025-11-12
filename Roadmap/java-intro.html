@@ -4,7 +4,22 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Intro to Java - Coding Playground</title>
+    <title>Intro to Java - Learn Java Basics | Learnovate</title>
+    <meta name="description" content="Learn Java fundamentals - What is Java, basic syntax, printing, comments, JDK, JRE, JVM. Complete beginner's guide to Java programming.">
+    <meta name="keywords" content="Java Introduction, Java Basics, Learn Java, Java Tutorial, JDK, JRE, JVM, Java Programming">
+    <meta name="author" content="XEQT Community">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Intro to Java - Learn Java Basics">
+    <meta property="og:description" content="Learn Java fundamentals - What is Java, basic syntax, printing, comments, and more.">
+    <meta property="og:image" content="https://learnovate.onrender.com/assets/logo.PNG">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Intro to Java - Learn Java Basics">
+    <meta name="twitter:description" content="Learn Java fundamentals - What is Java, basic syntax, printing, comments, and more.">
+    
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
@@ -45,6 +60,14 @@
 
     <main class="content-page">
         <div class="container">
+            <div class="navigation-buttons" style="display: flex; gap: 15px; margin-bottom: 30px; flex-wrap: wrap;">
+                <a href="index.html" class="nav-back-btn" style="padding: 10px 20px; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; text-decoration: none; border-radius: 8px; font-weight: 600; display: inline-flex; align-items: center; gap: 8px; transition: transform 0.2s;">
+                    <i class="fas fa-home"></i> Back to Home
+                </a>
+                <a href="java-secrets.html" class="nav-next-btn" style="padding: 10px 20px; background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%); color: white; text-decoration: none; border-radius: 8px; font-weight: 600; display: inline-flex; align-items: center; gap: 8px; transition: transform 0.2s;">
+                    Next Lesson: Java Secrets <i class="fas fa-arrow-right"></i>
+                </a>
+            </div>
             <div class="content-section">
                 <h1>☕ What is Java?</h1>
                 <p>Java is a <strong>high-level, object-oriented, platform-independent programming language</strong>
@@ -173,9 +196,9 @@ to the screen, and it is amazing */</span>
                     <p>XEQT COMMUNITY © 2025</p>
                 </div>
                 <div class="footer-links">
-                    <a href="#">Terms & Conditions</a>
-                    <a href="#">Privacy Policy</a>
-                    <a href="#">Contact us</a>
+                    <a href="index.html#curriculum">Curriculum</a>
+                    <a href="mailto:xeqtcommunity@gmail.com">Contact us</a>
+                    <a href="https://github.com/ankittroy-21/Learnovate" target="_blank">GitHub</a>
                 </div>
             </div>
             <div class="footer-bottom">
@@ -203,6 +226,17 @@ to the screen, and it is amazing */</span>
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
 
     <script src="js/script.js"></script>
+    
+    <!-- Keep-alive script to prevent Render idle shutdown -->
+    <script>
+        // Ping the server every 5 minutes to keep it alive
+        setInterval(function() {
+            fetch('/ping')
+                .then(response => response.json())
+                .then(data => console.log('Keep-alive ping:', data.timestamp))
+                .catch(error => console.log('Ping failed:', error));
+        }, 5 * 60 * 1000); // Every 5 minutes
+    </script>
 </body>
 
 </html>
