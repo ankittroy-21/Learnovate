@@ -47,8 +47,8 @@ app.get('/java-intro', (req, res) => {
     res.sendFile(path.join(__dirname, 'java-intro.html'));
 });
 
-app.get('/java-secrets', (req, res) => {
-    res.sendFile(path.join(__dirname, 'java-secrets.html'));
+app.get('/taking-input', (req, res) => {
+    res.sendFile(path.join(__dirname, 'taking-input.html'));
 });
 
 // Fallback middleware for case-insensitive asset paths
