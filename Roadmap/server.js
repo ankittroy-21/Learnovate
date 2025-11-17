@@ -4,8 +4,21 @@ const path = require('path');
 const app = express();
 const PORT = process.env.PORT || 3000;
 
+// Enable case-sensitive routing to false (helps with cross-platform compatibility)
+app.set('case sensitive routing', false);
+
 // Serve static files from the Roadmap directory
-app.use(express.static(__dirname));
+// Set etag and maxAge for better caching
+app.use(express.static(__dirname, {
+    etag: true,
+    maxAge: '1d',
+    setHeaders: (res, filePath) => {
+        // Ensure images are cached properly
+        if (filePath.match(/\.(png|jpg|jpeg|gif|svg|ico)$/i)) {
+            res.setHeader('Cache-Control', 'public, max-age=86400');
+        }
+    }
+}));
 
 // Health check endpoint for Render
 app.get('/health', (req, res) => {
@@ -36,6 +49,28 @@ app.get('/java-intro', (req, res) => {
 
 app.get('/java-secrets', (req, res) => {
     res.sendFile(path.join(__dirname, 'java-secrets.html'));
+});
+
+// Fallback middleware for case-insensitive asset paths
+app.use((req, res, next) => {
+    const fs = require('fs');
+    const requestedPath = path.join(__dirname, req.path);
+    
+    // Check if file exists with different case
+    if (!fs.existsSync(requestedPath)) {
+        const dir = path.dirname(requestedPath);
+        const file = path.basename(requestedPath);
+        
+        if (fs.existsSync(dir)) {
+            const files = fs.readdirSync(dir);
+            const matchingFile = files.find(f => f.toLowerCase() === file.toLowerCase());
+            
+            if (matchingFile) {
+                return res.sendFile(path.join(dir, matchingFile));
+            }
+        }
+    }
+    next();
 });
 
 // Keep-alive mechanism - self-ping to prevent idle shutdown
