@@ -1,0 +1,317 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Taking Input in Java - Scanner Class Tutorial | Learnovate</title>
+    <meta name="description" content="Learn how to take user input in Java using Scanner class. Complete guide with step-by-step explanation and examples for beginners.">
+    <meta name="keywords" content="Java Input, Java Scanner, User Input Java, Scanner Class, Java Tutorial, Learn Java">
+    <meta name="author" content="XEQT Community">
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="article">
+    <meta property="og:title" content="Taking Input in Java - Scanner Class Tutorial">
+    <meta property="og:description" content="Learn how to take user input in Java using Scanner class with step-by-step explanation.">
+    <meta property="og:image" content="https://learnovate.onrender.com/assets/logo2.png">
+    
+    <!-- Twitter -->
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Taking Input in Java">
+    <meta name="twitter:description" content="Learn how to take user input in Java using Scanner class.">
+    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/responsive.css">
+</head>
+<body>
+    <nav class="sticky-nav" id="stickyNav">
+        <div class="nav-left">
+            <img src="assets/logo2.png" alt="Logo" class="logo">
+        </div>
+
+        <ul class="nav-links" id="navLinks">
+            <li><a href="index.html">Overview</a></li>
+            <li><a href="index.html">Mentors</a></li>
+            <li><a href="index.html">Curriculum</a></li>
+            <li><a href="index.html">FAQs</a></li>
+            <li><a href="index.html">About Us</a></li>
+            <li><a href="index.html">Careers</a></li>
+            <li><a href="index.html">Contact Us</a></li>
+        </ul>
+
+        <div class="nav-right">
+            <div class="nav-right-links">
+                <button class="enroll-btn">Join Us</button>
+            </div>
+        </div>
+
+        <div class="hamburger" id="hamburger">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+    </nav>
+
+    <main class="content-page">
+        <div class="container">
+            <div class="navigation-buttons" style="display: flex; gap: 15px; margin-bottom: 30px; flex-wrap: wrap;">
+                <a href="index.html" class="watch-btn">
+                    <i class="fas fa-home"></i> Back to Home
+                </a>
+                <a href="java-intro.html" class="watch-btn">
+                    <i class="fas fa-arrow-left"></i> Previous: Intro to Java
+                </a>
+            </div>
+            <div class="content-section">
+                <h1>📥 Explanation (To take Input from User)</h1>
+
+                <h3>1. Import Statement</h3>
+                <div class="code-block">
+                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                    <pre><span class="code-keyword">import</span> <span class="code-class">java</span>.<span class="code-class">util</span>.<span class="code-class">Scanner</span>;</pre>
+                </div>
+                <h4>Purpose:</h4>
+                <p>Tells Java we want to use the Scanner class.</p>
+                <h4>Why needed:</h4>
+                <p>Scanner is not automatically available; we must import it.</p>
+                <h4>Location:</h4>
+                <p><code>java.util</code> is the package where Scanner lives.</p>
+
+                <h3>2. Class Declaration</h3>
+                <div class="code-block">
+                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                    <pre><span class="code-keyword">public class</span> <span class="code-class">QuickInput</span> {}</pre>
+                </div>
+                <h4>Purpose:</h4>
+                <p>Creates a container for our program.</p>
+                <h4>Naming:</h4>
+                <p>Class name must match filename (QuickInput.java).</p>
+                <h4>Public:</h4>
+                <p>Means other parts of the program can access it.</p>
+
+                <h3>3. Main Method</h3>
+                <div class="code-block">
+                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                    <pre><span class="code-keyword">public static void</span> <span class="code-method">main</span>(<span class="code-class">String</span>[] args) {}</pre>
+                </div>
+                <h4>Purpose:</h4>
+                <p>The starting point of every Java application.</p>
+                <h4>Required:</h4>
+                <p>Every program must have a main method.</p>
+                <h4>Execution:</h4>
+                <p>Java looks for this method to begin running.</p>
+                
+                <h3>4. Scanner Object Creation</h3>
+                <div class="code-block">
+                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                    <pre><span class="code-class">Scanner</span> input = <span class="code-keyword">new</span> <span class="code-class">Scanner</span>(<span class="code-class">System</span>.in);</pre>
+                </div>
+                <blockquote>
+                    <b>Scanner input:</b> Creates a variable named 'input' of type Scanner.<br>
+                    <b>new Scanner(System.in):</b> Creates a new Scanner object that reads from keyboard.<br>
+                    <b>System.in:</b> Represents the standard input (keyboard).
+                </blockquote>
+
+                <h3>5. Output to User</h3>
+                <div class="code-block">
+                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                    <pre><span class="code-class">System</span>.out.<span class="code-method">print</span>(<span class="code-string">"What's your name? "</span>);</pre>
+                </div>
+                 <blockquote>
+                    <b>System.out:</b> Standard output (console/screen).<br>
+                    <b>print():</b> Displays text without moving to next line.<br>
+                    <b>println():</b> (Used later) displays text and moves to next line.
+                </blockquote>
+
+                <h3>6. Reading Input</h3>
+                <div class="code-block">
+                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                    <pre><span class="code-class">String</span> name = input.<span class="code-method">nextLine</span>();</pre>
+                </div>
+                <h4>input.nextLine():</h4>
+                <p>Reads a full line of text entered by user.</p>
+                <h4>String name:</h4>
+                <p>Stores the input in a variable called 'name'.</p>
+                <h4>Variable:</h4>
+                <p>Like a labeled box that holds information.</p>
+
+                <h3>7. Displaying Result</h3>
+                <div class="code-block">
+                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                    <pre><span class="code-class">System</span>.out.<span class="code-method">println</span>(<span class="code-string">"Nice to meet you, "</span> + name + <span class="code-string">"!"</span>);</pre>
+                </div>
+                <h4>String concatenation:</h4>
+                <p>Using + to combine text and variables.</p>
+                <h4>Variables in text:</h4>
+                <p><code>name</code> gets replaced with actual user input.</p>
+                <h4>println:</h4>
+                <p>Adds a new line after displaying the message.</p>
+                
+                <h3>8. Closing Scanner</h3>
+                <div class="code-block">
+                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                    <pre>input.<span class="code-method">close</span>();</pre>
+                </div>
+                <h4>Good practice:</h4>
+                <p>Releases system resources.</p>
+                <h4>Prevents:</h4>
+                <p>Memory leaks in larger programs.</p>
+                <h4>Optional:</h4>
+                <p>But recommended for clean code.</p>
+            </div>
+            
+            <hr>
+
+            <div class="content-section">
+                <h2>The Whole Program for taking inputs</h2>
+                <div class="code-block">
+                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                    <pre><span class="code-comment">// This line imports the Scanner class from Java's utility package</span>
+<span class="code-comment">// We need this to read input from the user</span>
+<span class="code-keyword">import</span> <span class="code-class">java</span>.<span class="code-class">util</span>.<span class="code-class">Scanner</span>;
+
+<span class="code-comment">// This is our main class - every Java program needs one</span>
+<span class="code-keyword">public class</span> <span class="code-class">QuickInput</span> {
+    
+    <span class="code-comment">// This is the main method - where our program starts running</span>
+    <span class="code-keyword">public static void</span> <span class="code-method">main</span>(<span class="code-class">String</span>[] args) {
+        
+        <span class="code-comment">// Create a Scanner object called 'input'</span>
+        <span class="code-comment">// System.in means we're reading from keyboard input</span>
+        <span class="code-class">Scanner</span> input = <span class="code-keyword">new</span> <span class="code-class">Scanner</span>(<span class="code-class">System</span>.in);
+        
+        <span class="code-comment">// Print a question to the screen</span>
+        <span class="code-comment">// System.out.print() doesn't add a new line after the text</span>
+        <span class="code-class">System</span>.out.<span class="code-method">print</span>(<span class="code-string">"What's your name? "</span>);
+        
+        <span class="code-comment">// Read the user's input as text and store it in a variable called 'name'</span>
+        <span class="code-comment">// nextLine() reads everything the user types until they press Enter</span>
+        <span class="code-class">String</span> name = input.<span class="code-method">nextLine</span>();
+        
+        <span class="code-comment">// Print a greeting message that includes the user's name</span>
+        <span class="code-comment">// The + operator combines text with variables</span>
+        <span class="code-class">System</span>.out.<span class="code-method">println</span>(<span class="code-string">"Nice to meet you, "</span> + name + <span class="code-string">"!"</span>);
+        
+        <span class="code-comment">// Close the scanner to free up resources</span>
+        <span class="code-comment">// This is good practice to prevent memory leaks</span>
+        input.<span class="code-method">close</span>();
+    }
+}</pre>
+                </div>
+            </div>
+            
+            <hr>
+            
+            <div class="content-section">
+                <h2>How the Program Works</h2>
+                <h3>Step-by-Step Execution:</h3>
+                 <blockquote>
+                    <b>Import Scanner</b> → Makes Scanner class available<br>
+                    <b>Create class</b> → Sets up program structure<br>
+                    <b>Start main method</b> → Program begins running<br>
+                    <b>Create Scanner object</b> → Prepares to read input<br>
+                    <b>Display question</b> → Asks user for name<br>
+                    <b>Wait for input</b> → Program pauses for user to type<br>
+                    <b>Read input</b> → Captures what user typed<br>
+                    <b>Display greeting</b> → Shows personalized message<br>
+                    <b>Close Scanner</b> → Cleans up resources<br>
+                    <b>Program ends</b> → Execution completes
+                </blockquote>
+                <h3>Example Output:</h3>
+                <div class="code-block">
+                    <button class="copy-btn" onclick="copyCode(this)">Copy</button>
+                    <pre>What's your name? Sarah
+Nice to meet you, Sarah!</pre>
+                </div>
+            </div>
+
+            <hr>
+            
+            <div class="content-section">
+                <h2>Key Concepts for Beginners</h2>
+                <h3>Variables</h3>
+                <blockquote>
+                    <b>String name:</b> A variable that stores text<br>
+                    <b>Declaration:</b> <code>String name</code> creates the variable<br>
+                    <b>Assignment:</b> <code>= input.nextLine()</code> puts value in variable
+                </blockquote>
+                <h3>Input/Output</h3>
+                 <blockquote>
+                    <b>Input:</b> Getting data from user (Scanner)<br>
+                    <b>Output:</b> Displaying data to user (System.out)<br>
+                    <b>Streams:</b> System.in (input), System.out (output)
+                </blockquote>
+                <h3>Methods</h3>
+                 <blockquote>
+                    <b>nextLine():</b> Reads text input<br>
+                    <b>print()/println():</b> Displays output<br>
+                    <b>close():</b> Cleans up resources
+                </blockquote>
+            </div>
+            
+            <hr>
+            
+            <div class="content-section" style="background: #f8f9fa; padding: 20px; border-radius: 8px; border-left: 4px solid #ef5742;">
+                <h3 style="color: #ef5742;"><i class="fab fa-github"></i> Want More Details?</h3>
+                <p>For a more comprehensive explanation and additional examples, visit the detailed README file in our GitHub repository:</p>
+                <a href="https://github.com/ankittroy-21/Learnovate/blob/main/Basics/Basic_Syntax/Taking_Inputs/README.md" target="_blank" class="watch-btn" style="display: inline-block;">
+                    <i class="fab fa-github"></i> View on GitHub <i class="fas fa-external-link-alt"></i>
+                </a>
+            </div>
+        </div>
+    </main>
+    
+    <footer class="site-footer">
+        <div class="footer-container">
+            <div class="footer-top">
+                <div class="footer-logo">
+                    <span>XEQT</span>
+                    <p>XEQT COMMUNITY © 2025</p>
+                </div>
+                <div class="footer-links">
+                    <a href="index.html#curriculum">Curriculum</a>
+                    <a href="mailto:xeqtcommunity@gmail.com">Contact us</a>
+                    <a href="https://github.com/ankittroy-21/Learnovate" target="_blank">GitHub</a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <div class="contact-col">
+                    <i class="fas fa-headset"></i>
+                    <p>9000000008</p>
+                </div>
+                <div class="contact-col">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <p>For Program Related Enquiries</p>
+                        <a href="mailto:xeqtcommunity@gmail.com">xeqtcommunity@gmail.com</a>
+                    </div>
+                </div>
+                <div class="contact-col">
+                    <i class="fas fa-envelope"></i>
+                    <div>
+                        <p>For Doubts</p>
+                        <a href="mailto:xeqt.dev@gmail.com">xeqt.dev@gmail.com</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <script src="js/script.js"></script>
+    
+    <!-- Keep-alive script to prevent Render idle shutdown -->
+    <script>
+        // Ping the server every 5 minutes to keep it alive
+        setInterval(function() {
+            fetch('/ping')
+                .then(response => response.json())
+                .then(data => console.log('Keep-alive ping:', data.timestamp))
+                .catch(error => console.log('Ping failed:', error));
+        }, 5 * 60 * 1000); // Every 5 minutes
+    </script>
+</body>
+</html>
